@@ -1,12 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-const h1 = React.createElement(
-  "h1",
-  {
-    id: "header",
-    className: "header-block",
-  },
-  "Hello World to React Experiments!"
+
+const h1 = (
+  <header className="header-section">
+    <h1 id="header">Hello React using JSX</h1>
+  </header>
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(h1);
