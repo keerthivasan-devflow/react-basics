@@ -1,3 +1,6 @@
+// This is actually the core of React but really cumbersome. So JSX introduced in React which will
+// help our life is more easier than expected, when we wanted to create HTML tags.
+// React is not only possible to write within JSX. we can write it like below too.
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child1" }, [
     React.createElement("h1", {}, "I am a child-1 header"),
@@ -8,7 +11,3 @@ const parent = React.createElement("div", { id: "parent" }, [
     React.createElement("p", {}, "I am a child-2 paragraph"),
   ]),
 ]);
-
-console.log(parent);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
