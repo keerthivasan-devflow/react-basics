@@ -1,0 +1,36 @@
+{
+  "name": "react-experiments",
+  "version": "1.0.0",
+  "description": "This is react core concepts for beginners",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevasan-techie/react-basics.git"
+  },
+  "keywords": [
+    "react",
+    "react-basics",
+    "react-experiments",
+    "react-project"
+  ],
+  "author": "Keerthivasan Mani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevasan-techie/react-basics/issues"
+  },
+  "homepage": "https://github.com/kevasan-techie/react-basics#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist": [
+    "last 10 versions"
+  ]
+}

@@ -1,13 +1,12 @@
-// React Element: h1
-// What is React Element - an object
+import React from "react";
+import ReactDOM from "react-dom/client";
 const h1 = React.createElement(
   "h1",
   {
     id: "header",
-    class: "header-block",
+    className: "header-block",
   },
-  "Hello World from React!"
+  "Hello World to React Experiments!"
 );
-console.log("h1: ", h1);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(h1);
