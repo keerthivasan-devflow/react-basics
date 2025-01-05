@@ -1,0 +1,107 @@
+[
+  {
+    "restaurantName": "Spicy Bites",
+    "cuisines": ["Indian", "Chinese"],
+    "menuItems": ["Paneer Butter Masala", "Spring Rolls", "Biryani"],
+    "deliveryTime": 30,
+    "ratings": 4.5
+  },
+  {
+    "restaurantName": "The Pizzeria",
+    "cuisines": ["Italian", "Pizza"],
+    "menuItems": ["Margherita Pizza", "Pepperoni Pizza", "Garlic Bread"],
+    "deliveryTime": 25,
+    "ratings": 4.2
+  },
+  {
+    "restaurantName": "Burger King",
+    "cuisines": ["American", "Fast Food"],
+    "menuItems": ["Cheeseburger", "French Fries", "Milkshake"],
+    "deliveryTime": 20,
+    "ratings": 3.8
+  },
+  {
+    "restaurantName": "Sushi Haven",
+    "cuisines": ["Japanese", "Sushi"],
+    "menuItems": ["California Roll", "Nigiri", "Tempura"],
+    "deliveryTime": 40,
+    "ratings": 4.7
+  },
+  {
+    "restaurantName": "Taco Fiesta",
+    "cuisines": ["Mexican", "Tacos"],
+    "menuItems": ["Chicken Tacos", "Beef Burritos", "Guacamole"],
+    "deliveryTime": 35,
+    "ratings": 4.1
+  },
+  {
+    "restaurantName": "Curry Corner",
+    "cuisines": ["Indian", "South Indian"],
+    "menuItems": ["Dosa", "Butter Chicken", "Sambar"],
+    "deliveryTime": 50,
+    "ratings": 4.4
+  },
+  {
+    "restaurantName": "Vegan Delight",
+    "cuisines": ["Vegan", "Healthy"],
+    "menuItems": ["Vegan Burger", "Smoothie Bowl", "Avocado Salad"],
+    "deliveryTime": 30,
+    "ratings": 4.8
+  },
+  {
+    "restaurantName": "The Pasta House",
+    "cuisines": ["Italian", "Pasta"],
+    "menuItems": ["Spaghetti Aglio Olio", "Fettuccine Alfredo", "Lasagna"],
+    "deliveryTime": 25,
+    "ratings": 4.3
+  },
+  {
+    "restaurantName": "Biryani King",
+    "cuisines": ["Indian", "Biryani"],
+    "menuItems": ["Chicken Biryani", "Mutton Biryani", "Raita"],
+    "deliveryTime": 40,
+    "ratings": 4.6
+  },
+  {
+    "restaurantName": "Café Delight",
+    "cuisines": ["Cafe", "Continental"],
+    "menuItems": ["Pasta", "Café Mocha", "Croissants"],
+    "deliveryTime": 15,
+    "ratings": 3.9
+  },
+  {
+    "restaurantName": "BBQ Grill",
+    "cuisines": ["Grill", "BBQ"],
+    "menuItems": ["Grilled Chicken", "BBQ Ribs", "Garlic Bread"],
+    "deliveryTime": 30,
+    "ratings": 4.0
+  },
+  {
+    "restaurantName": "Ramen House",
+    "cuisines": ["Japanese", "Ramen"],
+    "menuItems": ["Shoyu Ramen", "Miso Ramen", "Tonkotsu Ramen"],
+    "deliveryTime": 45,
+    "ratings": 4.2
+  },
+  {
+    "restaurantName": "Salad Studio",
+    "cuisines": ["Healthy", "Salads"],
+    "menuItems": ["Greek Salad", "Caesar Salad", "Fruit Salad"],
+    "deliveryTime": 20,
+    "ratings": 4.3
+  },
+  {
+    "restaurantName": "Dim Sum Delight",
+    "cuisines": ["Chinese", "Dim Sum"],
+    "menuItems": ["Pork Dumplings", "Shrimp Dim Sum", "Spring Rolls"],
+    "deliveryTime": 30,
+    "ratings": 4.1
+  },
+  {
+    "restaurantName": "Pizza Town",
+    "cuisines": ["Italian", "Pizza"],
+    "menuItems": ["Four Cheese Pizza", "Hawaiian Pizza", "Pizza Pockets"],
+    "deliveryTime": 30,
+    "ratings": 4.0
+  }
+]

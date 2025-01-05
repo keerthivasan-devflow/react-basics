@@ -4,7 +4,7 @@
   "description": "This is react core concepts for beginners",
   "main": "App.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel ./public/index.html",
     "build": "parcel build index.html",
     "test": "jest"
   },
