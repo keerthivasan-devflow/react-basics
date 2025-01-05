@@ -32,7 +32,7 @@
     "cuisines": ["Mexican", "Tacos"],
     "menuItems": ["Chicken Tacos", "Beef Burritos", "Guacamole"],
     "deliveryTime": 35,
-    "ratings": 4.1
+    "ratings": 3.1
   },
   {
     "restaurantName": "Curry Corner",
@@ -53,7 +53,7 @@
     "cuisines": ["Italian", "Pasta"],
     "menuItems": ["Spaghetti Aglio Olio", "Fettuccine Alfredo", "Lasagna"],
     "deliveryTime": 25,
-    "ratings": 4.3
+    "ratings": 3.3
   },
   {
     "restaurantName": "Biryani King",
@@ -88,7 +88,7 @@
     "cuisines": ["Healthy", "Salads"],
     "menuItems": ["Greek Salad", "Caesar Salad", "Fruit Salad"],
     "deliveryTime": 20,
-    "ratings": 4.3
+    "ratings": 3.3
   },
   {
     "restaurantName": "Dim Sum Delight",
@@ -102,6 +102,6 @@
     "cuisines": ["Italian", "Pizza"],
     "menuItems": ["Four Cheese Pizza", "Hawaiian Pizza", "Pizza Pockets"],
     "deliveryTime": 30,
-    "ratings": 4.0
+    "ratings": 3.7
   }
 ]

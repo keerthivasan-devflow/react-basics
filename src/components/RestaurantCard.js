@@ -19,7 +19,7 @@ const RestaurantCard = (props) => {
           <p className="restaurant-cuisine">{cuisines.join(", ")}</p>
           <p className="restaurant-menu-items">{menuItems.join(", ")}</p>
           <p className="restaurant-rating">{ratings} stars</p>
-          <p className="restaurant-time">{deliveryTime}</p>
+          <p className="restaurant-time">{deliveryTime} minutes</p>
         </div>
       </div>
     </>

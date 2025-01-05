@@ -50,15 +50,14 @@
 /* Main Content Styles */
 .main-content {
   padding: 20px;
-  /* background-color: #f8f8f8; */
   border: solid thin #ccc;
   margin-top: 20px; /* Adds space between the navbar and the main content */
 }
 
 /* Search Bar Styles */
-.search-bar {
+.button-search-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 30px; /* Space below the search bar */
 }
 
@@ -67,7 +66,7 @@
   padding: 10px 15px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ff7043;
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: border 0.3s ease;
@@ -75,6 +74,21 @@
 
 .search-input:focus {
   border-color: #007bff;
+}
+
+#top-rated-btn {
+  background-color: #ff7043; /* Mild orange color */
+  color: white; /* White text color */
+  border: none; /* Remove the default button border */
+  padding: 10px 20px; /* Adjust padding for better button size */
+  font-size: 16px; /* Font size for the text */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Optional: rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#top-rated-btn:hover {
+  background-color: #ff5722; /* Darker orange for hover effect */
 }
 
 /* Restaurant List Layout */
