@@ -1,7 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import Search from "./Search";
 import data from "../utils/restaurant.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Container = () => {
   const [state, updateState] = useState(data);
@@ -9,6 +9,20 @@ const Container = () => {
     const resultantList = data.filter((res) => res.ratings > 4.0);
     updateState(resultantList);
   };
+
+  const fetchAPI = async () => {
+    const restaurant = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0843007&lng=80.2704622&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
+    const json = await restaurant.json();
+    console.log(json.data)
+    // updateState(json)
+  };
+
+  useEffect(() => {
+    fetchAPI();
+    console.log("useEffect() invoked!");
+  }, []);
 
   return (
     <main className="main-content">
