@@ -47,6 +47,10 @@
   color: #007bff;
 }
 
+.navbar-link{
+  text-decoration: none;
+}
+
 /* Main Content Styles */
 .main-content {
   padding: 20px;

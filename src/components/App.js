@@ -4,7 +4,12 @@ import Header from "./Header";
 import Container from "./Container";
 import About from "./About";
 import Error from "./Error";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
+import {
+  createBrowserRouter,
+  Navigate,
+  Outlet,
+  RouterProvider,
+} from "react-router";
 
 const App = () => {
   return (
@@ -27,6 +32,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/home",
+        element: <Navigate to={"/"} />,
       },
     ],
     errorElement: <Error />,

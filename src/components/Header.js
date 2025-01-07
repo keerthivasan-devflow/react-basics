@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../../images/logo.webp";
+import { Link } from "react-router";
 
 const Header = () => {
   const [isLoggedIn, setLoggedIn] = useState(true);
@@ -22,12 +23,30 @@ const Header = () => {
       </div>
       <nav className="navbar">
         <ul className="navbar-list">
-          <li className="navbar-item">Home</li>
-          <li className="navbar-item">About</li>
-          <li className="navbar-item">Contact</li>
-          <li className="navbar-item">Cart</li>
+          <li className="navbar-item">
+            <Link to={"/"} className="navbar-link">
+              Home
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to={"/about"} className="navbar-link">
+              About
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to={"/contact"} className="navbar-link">
+              Contact
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to={"/cart"} className="navbar-link">
+              Cart
+            </Link>
+          </li>
           <li className="navbar-item" onClick={handleAuthentication}>
-            {isLoggedIn ? "Logout" : "Login"}
+            <Link className="navbar-link">
+              {isLoggedIn ? "Logout" : "Login"}
+            </Link>
           </li>
         </ul>
       </nav>
