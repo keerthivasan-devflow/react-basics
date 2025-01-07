@@ -10,6 +10,7 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router";
+import UserLogin from "./UserLogin";
 
 const App = () => {
   return (
@@ -21,6 +22,10 @@ const App = () => {
 };
 
 const appRouter = createBrowserRouter([
+  {
+    path: "/login",
+    element: <UserLogin />,
+  },
   {
     path: "/",
     element: <App />,

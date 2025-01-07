@@ -44,8 +44,8 @@ const Header = () => {
             </Link>
           </li>
           <li className="navbar-item" onClick={handleAuthentication}>
-            <Link className="navbar-link">
-              {isLoggedIn ? "Logout" : "Login"}
+            <Link to={"/login"} className="navbar-link">
+              {isLoggedIn ? "Login" : "Logout"}
             </Link>
           </li>
         </ul>
