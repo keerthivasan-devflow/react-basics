@@ -12,7 +12,6 @@
   
 # PART - 2
 # 1. useEffect ()
-    - Refer handwritten notes
     - display shimmer UI
 
 # 2. CORS Policy
@@ -21,7 +20,7 @@ CORS (Cross-Origin Resource Sharing) is a mechanism that allows web applications
 By default, browsers block requests from one origin (e.g., http://localhost:3000) to a different origin (e.g., https://api.example.com) unless the target server explicitly allows it via CORS headers.
 
 # PART - 3
-1.44.00 continue...
+1. Search Fuctionality Implementation
 
 
 Note: React renders fastly [because of its renders lifecycle] - One of the best characteristics of React

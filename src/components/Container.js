@@ -1,10 +1,11 @@
 import RestaurantCard from "./RestaurantCard";
-import Search from "./Search";
 import data from "../utils/restaurant.json";
 import { useEffect, useState } from "react";
 
 const Container = () => {
   const [state, updateState] = useState(data);
+  const [searchText, setSearchText] = useState("");
+
   const getTopRatedRestaurants = () => {
     const resultantList = data.filter((res) => res.ratings > 4.0);
     updateState(resultantList);
@@ -15,14 +16,20 @@ const Container = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0843007&lng=80.2704622&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await restaurant.json();
-    console.log(json.data)
-    // updateState(json)
   };
 
   useEffect(() => {
     fetchAPI();
-    console.log("useEffect() invoked!");
   }, []);
+
+  const GetSearchTextFromUser = (event) => {
+    setSearchText(event.target.value);
+  };
+
+  const FilteredList = () => {
+    const filteredRestaurants = data.filter((res) => res.restaurantName.toLocaleLowerCase().includes(searchText));
+    updateState(filteredRestaurants);
+  };
 
   return (
     <main className="main-content">
@@ -35,7 +42,22 @@ const Container = () => {
         >
           Top Rated Restaurants
         </button>
-        <Search />
+        <input
+          type="search"
+          id="search"
+          className="search-input"
+          placeholder="Search your favorite restaurant"
+          value={searchText}
+          onChange={GetSearchTextFromUser}
+        />
+        <button
+          type="button"
+          id="search-btn"
+          className="btn search-btn"
+          onClick={FilteredList}
+        >
+          Search
+        </button>
       </div>
 
       <div className="restaurant-list">

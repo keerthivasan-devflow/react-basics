@@ -1,5 +1,6 @@
-# PART - 1
+# Hooks concept / Reconciliation / Virtual DOM / React Fiber
 
+# PART - 1
 Cleaning up the project files or folders
 Folder structure
 Named/Default Imports/Exports
@@ -12,14 +13,13 @@ React Features
     - Component architecture
     - Faster/Efficient DOM Manipulation 
         - Diffing Algorithm
-        - Virtual DOM
+        - Virtual DOM (Object Representation of JSX)
         - Reconciliation
 
 Hook is just a normal JS function(*written by facebbook*). They are super-powerful functions in React.
 useState()
-useEffect()
 
-React hooks are usually imported using named imports/exports
+React hooks are usually included using named imports from 'react'
 
 What is Reconciliation? (React Fiber)
     - Virtual DOM
