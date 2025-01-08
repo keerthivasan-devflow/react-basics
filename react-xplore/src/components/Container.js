@@ -27,7 +27,9 @@ const Container = () => {
   };
 
   const FilteredList = () => {
-    const filteredRestaurants = data.filter((res) => res.restaurantName.toLocaleLowerCase().includes(searchText));
+    const filteredRestaurants = data.filter((res) =>
+      res.restaurantName.toLocaleLowerCase().includes(searchText)
+    );
     updateState(filteredRestaurants);
   };
 

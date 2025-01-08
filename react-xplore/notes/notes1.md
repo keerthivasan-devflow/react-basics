@@ -33,11 +33,17 @@ The source code available through these CDN links is written by Facebook (specif
 1. How to create hierarchial structure of React Elements in React?
 2. How to create siblings React Element?
 
-# PART 5
-1. Library vs. Framework  
-2. React can be applied to specific sections of your website, such as the header, and you can even integrate it into an existing project.  
-3. A framework requires that the entire application be built using that framework.
-
 # LEARN MORE
 1. crossorigin attribute
+ -  When you load a script from different domain, the browser will block certain operations for security reasons unless the    server explicitly allows it. Therefore, this controls whether and how the script should be allowed to interact with resources from different origins while respecting security policies like CORS (Cross-Origin Resource Sharing).
+
+- "anonymous" (default) - Request will be made without any credentials
+    If the server responds with a valid CORS header (e.g., Access-Control-Allow-Origin), the script is executed. Otherwise, the browser will block the script.
+- "use-credentials"
+    The server must include the Access-Control-Allow-Credentials header, and the Access-Control-Allow-Origin header must not be set to * (it must specify a specific domain).
+
+    The credentials are sent along with the request, and the server must respond with the correct CORS headers that allow the use of credentials.
+
 2. Framework vs. Library
+    - React can be applied to specific sections of your website and you can even integrate it into an existing project.  
+    - A framework requires that the entire application be built using that framework.
