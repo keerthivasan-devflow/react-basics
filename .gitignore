@@ -2,6 +2,7 @@
 react-practical/node_modules
 react-material-styled/node_modules
 react-typescript/node_modules
+react-toolkit-saga/node_modules
 
 # React Testing Folder
 react-testing/node_modules

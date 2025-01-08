@@ -1,0 +1,16 @@
+# source : https://redux-saga.js.org/docs/
+
+# Summary of Key Steps:
+
+1. Create a saga: Write a saga function that listens for actions and performs side effects (like API calls).
+
+2. Configure the store: Set up the Redux store using configureStore from Redux Toolkit and add the Redux-Saga middleware using createSagaMiddleware.
+
+3. Dispatch actions: From your React components, dispatch actions that trigger the saga to run.
+
+4. Run the saga: In the store configuration, run the root saga using sagaMiddleware.run(rootSaga).
+
+# Additional Notes:
+
+The redux-saga middleware is integrated into the store's configuration via getDefaultMiddleware().concat(sagaMiddleware).
+You can create multiple sagas and use takeEvery, takeLatest, or fork to handle different types of actions or to handle concurrent tasks.
