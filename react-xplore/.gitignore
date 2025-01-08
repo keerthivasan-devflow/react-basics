@@ -1,7 +1,0 @@
-node_modules
-# notes
-.parcel-cache
-dist
-notes/CORS.md
-notes/monolithic.md
-notes/microservice.md
