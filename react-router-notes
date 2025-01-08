@@ -1,0 +1,23 @@
+
+# <Navigate /> Component from "react-router-dom"
+react-router(v5) - <Redirect />
+
+3 major purposes
+****************
+1. It's mainly used to redirect from legacy route to a new route.
+    if you want /home to be the canonical route for the home component, you can redirect from "/"
+    to "/home" using Navigate. 
+    <Navigate> is typically used as an element within <Route> or in conditional rendering.
+
+2. Handling conditional redirects, such as authenticated vs. unauthenticated users. (Redirecting users after an event, like form submission or login)
+    <Route path="/dashboard" element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />} />
+
+How many ways to do so
+***********************
+1. Navigate - more declarative approach
+2. useNavigate() hook - imperative approach
+
+# 2. Index Route
+Mainly used to render a fallback component when no other route match is provided.
+Example: Default Component - Product category (Electronics which may include mobile, cameras, fan, light etc)
+Featured & New products are more specific nested routes
