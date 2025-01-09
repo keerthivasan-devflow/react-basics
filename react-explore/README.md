@@ -1,6 +1,6 @@
-# LEARN MORE ABOUT REACT
+## LEARN MORE ABOUT REACT
 
-# Our Food Application
+### Our Food Application
 Header
   Logo
   MenuBar

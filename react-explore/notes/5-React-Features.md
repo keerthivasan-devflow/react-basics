@@ -1,12 +1,12 @@
 # Hooks concept / Reconciliation / Virtual DOM / React Fiber
 
-# PART - 1
+## PART - 1
 Cleaning up the project files or folders
 Folder structure
 Named/Default Imports/Exports
 
-# PART - 2
-# HOOKS CONCEPT
+## PART - 2
+## HOOKS CONCEPT
 
 React Features
     - Declarative
@@ -31,5 +31,5 @@ React Fiber is the new reconciliation engine (algorithm) introduced in React 16.
     - Concurrency
     - Prioritization of updates
 
-# source : https://github.com/acdlite/react-fiber-architecture
+## source : https://github.com/acdlite/react-fiber-architecture
 Learn about component, instance, react element, reconciliation and lot more.

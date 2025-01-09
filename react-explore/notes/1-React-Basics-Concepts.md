@@ -1,4 +1,5 @@
-# PART - 1
+# React Introduction
+## PART - 1
 1. How to write a "Hello World" program using pure HTML?  
 2. How to write a "Hello World" program using JavaScript and display it in the Chrome browser?  
 3. Everything about Content Delivery Network (CDN) links  
@@ -10,14 +11,14 @@
 4. What are the advantages and disadvantages of using a CDN?  
 5. What is the purpose of the `crossorigin` attribute in CDN links?
 
-# Importing react code into your project via CDN Links
+## Importing react code into your project via CDN Links
 When you import the official CDN links into your project, you gain access to all the resources related to React, allowing you to utilize its full functionality.
 
 After adding the CDN links to your project, open Chrome's Developer Tools, type "React" in the console, and press Enter to experience the power of React. This method confirms that React is properly integrated into your project.
 
 The source code available through these CDN links is written by Facebook (specifically for React) and is written in pure vanilla JavaScript.
 
-# PART - 2
+## PART - 2
 1. How to create a "Hello World" example using React  
     1.1. What is `React.createElement()` and how many arguments can it accept?  
         `React.createElement()` creates an object, not just pure HTML tags.  
@@ -29,11 +30,11 @@ The source code available through these CDN links is written by Facebook (specif
 2. What is the most expensive operation on a webpage?  
     DOM Manipulation - When a webpage becomes more interactive and the DOM tree changes frequently, this operation becomes costly. To optimize this, libraries have been introduced.
 
-# PART 4
+## PART 4
 1. How to create hierarchial structure of React Elements in React?
 2. How to create siblings React Element?
 
-# LEARN MORE
+## LEARN MORE
 1. crossorigin attribute
  -  When you load a script from different domain, the browser will block certain operations for security reasons unless the    server explicitly allows it. Therefore, this controls whether and how the script should be allowed to interact with resources from different origins while respecting security policies like CORS (Cross-Origin Resource Sharing).
 

@@ -1,6 +1,6 @@
 # React Optimization / Custom Hooks
 
-# PART - 1
+## PART - 1
 - Modularity (SRP)
     - Reusable
     - Maintainable
