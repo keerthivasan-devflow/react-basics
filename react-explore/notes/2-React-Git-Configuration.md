@@ -41,14 +41,14 @@ What is bundler? What is parcel? What is webpack? - Why do we need them?
 A bundler is a tool that combines and optimizes project files for production. Tools like Parcel and Webpack bundle your code by performing tasks such as minification, compression, and cleaning up the code, ensuring that your project is production-ready.
 
 ## Two ways of installing dependencies
-    a. Dev dependency: For development environment
+   a. Dev dependency: For development environment
        `npm install -D[--save-dev] dependency_name`
-    b. Normal dependency: For both development and production environment
+   b. Normal dependency: For both development and production environment
 
 ## What is the difference between tilde vs. caret operator in package.json file?
- `"parcel": "^2.13.3"`
-    - Tilde - upgrade the dependency to major version
-    - Caret - upgrade the dependency to minor version, but it always recommended to upgrade to minor version. Read, why?
+- **Example:** `"parcel": "^2.13.3"`
+- Tilde - upgrade the dependency to major version
+- Caret - upgrade the dependency to minor version, but it always recommended to upgrade to minor version. Read, why?
 
 ## What is package-lock.json file?
 Both the package.json and package-lock.json files should be pushed to the Git repository.
