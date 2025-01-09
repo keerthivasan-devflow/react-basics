@@ -14,12 +14,12 @@ React has a built-in feature to help with CORS during development by using the `
 
 In your `package.json`, add a `proxy` field like this:
 
-....{
-....  "name": "my-app",
-....  "version": "0.1.0",
-....  "private": true,
-....  "proxy": "http://localhost:5000"
-....}
+    {
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "proxy": "http://localhost:5000"
+    }
 
 
 - Replace `http://localhost:5000` with the address of the API server you're trying to make requests to.
