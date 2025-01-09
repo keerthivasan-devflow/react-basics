@@ -1,5 +1,6 @@
-# PART - 1
+# JSX Elements / BABEL Library Features / React Components
 
+# PART - 1
 Add your custom scripts for "start", "build", and "test" inside the "scripts" section of the `package.json` file. 
 To start your local server, run the following command: `npm start` (or `npm run start`).
 

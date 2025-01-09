@@ -1,5 +1,4 @@
-
-# Routing
+# Routing Concepts
 To set up routing in a React app, we create a routing configuration in the root-level component.
 
 - useRouterError() hook

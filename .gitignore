@@ -8,10 +8,10 @@ react-toolkit-saga/node_modules
 react-testing/node_modules
 react-testing/coverage
 
-# React Explore FOlder
-react-xplore/node_modules
-react-xplore/.parcel-cache
-react-xplore/dist
+# React Explore Folder
+react-explore/node_modules
+react-explore/.parcel-cache
+react-explore/dist
 notes/CORS.md
 notes/monolithic.md
 notes/microservice.md
