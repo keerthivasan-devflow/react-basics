@@ -1,7 +1,7 @@
 # Git Configuration / NPM / PARCEL Library
 
 ## PART - 1
-## Git Configuration
+### Git Configuration
 We have pushed all our code to the Git repository by following these steps:
 
 1. Create a GitHub account and log in.
@@ -20,7 +20,7 @@ We have pushed all our code to the Git repository by following these steps:
 8. Push your code to the remote repository
    - `git push origin react-dev`
 
-## What is Node Package Manager (NPM)?  
+### What is Node Package Manager (NPM)?  
 **source:** https://github.com/npm/npm-expansions
 
 - NPM is not just a Node Package Manager; it manages packages. How?  
@@ -28,29 +28,29 @@ We have pushed all our code to the Git repository by following these steps:
 
 When you create a React app using `create-react-app`, NPM is included by default, so you don't need to configure it separately.
 
-## Let's integrate npm into our project  
-## What is the package.json file?  
+### Let's integrate npm into our project  
+### What is the package.json file?  
 You can initialize it by running the command:  
 `npm init` or `npm init -y`  
 
 This command creates a `package.json` file, which contains the basic configuration for NPM. But why is this file necessary?  
 Packages are often referred to as dependencies because your project may rely on certain packages. These are called dependencies, and NPM will manage them for you. NPM tracks information about these dependencies in the `package.json` file.
 
-## Let's install bundler - Anything you like to
+### Let's install bundler - Anything you like to
 What is bundler? What is parcel? What is webpack? - Why do we need them?
 A bundler is a tool that combines and optimizes project files for production. Tools like Parcel and Webpack bundle your code by performing tasks such as minification, compression, and cleaning up the code, ensuring that your project is production-ready.
 
-## Two ways of installing dependencies
+### Two ways of installing dependencies
    1. Dev dependency: For development environment
        `npm install -D[--save-dev] dependency_name`
    2. Normal dependency: For both development and production environment
 
-## What is the difference between tilde vs. caret operator in package.json file?
+### What is the difference between tilde vs. caret operator in package.json file?
 - **Example:** `"parcel": "^2.13.3"`
 - Tilde - upgrade the dependency to major version
 - Caret - upgrade the dependency to minor version, but it always recommended to upgrade to minor version. Read, why?
 
-## What is package-lock.json file?
+### What is package-lock.json file?
 Both the package.json and package-lock.json files should be pushed to the Git repository.
 - `package.json:` Specifies approximate versions of dependencies.
 - `package-lock.json:` Records the exact versions of dependencies.
@@ -64,12 +64,12 @@ Both the package.json and package-lock.json files should be pushed to the Git re
 3. what is .gitignore file?
 
 ## PART - 2
-## Why CDN links are not the recommended approach
+### Why CDN links are not the recommended approach
 - CDN links are not ideal for working with React because they are typically imported using script tags with a `src` attribute, which points to a URL. This results in a separate network call to fetch the required code for the project, making it costly and inefficient. Instead, the code can be easily accessed through NPM in the `node_modules` folder, avoiding the need for extra network requests.
 
 - Additionally, when the version of React changes, you would need to manually update the URL. With NPM, however, it handles version management automatically during installation or upgrades.
 
-## Why parcel?
+### Why parcel?
 **source:** https://parceljs.org/
 Parcel Features
 - Zero Configuration
@@ -88,7 +88,7 @@ Parcel Features
 - HTTPS
 - Tree Shaking - remove unused code
 
-## How to create a production build using Parcel?
+### How to create a production build using Parcel?
    Run the command `npx parcel build index.html`. However, you may encounter an error due to the `App.js` entry point specified in the `package.json` file. To avoid this, remove it and then execute the command again.
 
 Workflow:  

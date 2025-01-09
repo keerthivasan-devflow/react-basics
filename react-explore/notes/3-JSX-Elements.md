@@ -7,7 +7,7 @@ To start your local server, run the following command: `npm start` (or `npm run 
 **Note:** `npm start` is a shorthand command that works only for "start" because it is a reserved keyword in NPM. However, it will not work for "build". Instead, you should execute `npm run build` to build the project.
 
 ## PART - 3
-## JSX Introduction
+### JSX Introduction
 - JSX is not a part of React; it is not HTML code written in JavaScript.
 - JSX is fundamentally different; it is a syntax that resembles HTML or XML.
 - JSX is developer-friendly.
@@ -23,11 +23,11 @@ To start your local server, run the following command: `npm start` (or `npm run 
 
 **Note:** If there are multiple lines of JSX code, wrap them in parentheses so Babel can clearly identify where the JSX begins and ends.
 
-## Babel Features
+### Babel Features
 - JS Compiler
 
 ## PART - 4
-## React Component
+### React Component
 
 1. What is a component?
 2. What are the two types of components?

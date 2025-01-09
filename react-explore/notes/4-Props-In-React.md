@@ -4,7 +4,7 @@
 1. How to write an inline style in React?
 
 ## PART - 2
-## Props and Props Destructuring in two ways
+### Props and Props Destructuring in two ways
 - Props are usually passed to a component to render dynamic data.
 - Instead of passing all the props individually in each component, you can retrieve them through an API once and use them for rendering.
 - `key` prop
