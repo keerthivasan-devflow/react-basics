@@ -17,7 +17,7 @@ To start your local server, run the following command: `npm start` (or `npm run 
 
 **Note:** JSX is not understood by browsers, as they can only interpret ES6. In this case, Parcel will transpile the code using the Babel package into actual JavaScript before it reaches the JS engine, since this project folder is configured with the Parcel bundler.
 
-<!-- Example:  const h1 = <h1 id="header">Hello React using JSX</h1>;   -->
+`Example:  const h1 = <h1 id="header">Hello React using JSX</h1>;  `
 - This is actually a React element.  
 - JSX is transformed into `React.createElement()` which produces a React element (a JavaScript object). The `render()` method then converts this React element into HTML.
 
@@ -31,8 +31,8 @@ To start your local server, run the following command: `npm start` (or `npm run 
 
 1. What is a component?
 2. What are the two types of components?
-   - a. Functional Component – A regular JavaScript function.
-   - b. Class Component – A component defined using ES6 class syntax.
+   - Functional Component – A regular JavaScript function.
+   - Class Component – A component defined using ES6 class syntax.
 3. What is Component Composition? - Nested Components
 
 **Note:** Always start the component name with a capital letter; otherwise, an error will be thrown.
