@@ -11,7 +11,7 @@
 4. What are the advantages and disadvantages of using a CDN?  
 5. What is the purpose of the `crossorigin` attribute in CDN links?
 
-## Importing react code into your project via CDN Links
+### Importing react code into your project via CDN Links
 When you import the official CDN links into your project, you gain access to all the resources related to React, allowing you to utilize its full functionality.
 
 After adding the CDN links to your project, open Chrome's Developer Tools, type "React" in the console, and press Enter to experience the power of React. This method confirms that React is properly integrated into your project.
