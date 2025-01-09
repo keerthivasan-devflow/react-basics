@@ -6,23 +6,25 @@ We have pushed all our code to the Git repository by following these steps:
 
 1. Create a GitHub account and log in.
 2. Create a new repository for your React project (you can create as many repositories as you need).
-3. Run `git init` to initialize your project folder as a Git repository.
-4. By default, Git will point to the master branch. Create a new development branch and switch to it:
-   `git checkout -b react-dev`
-   `git branch react-dev` and `git checkout react-dev`
-5. Add all your files to Git:
-   `git add .`
-6. Add a commit message that reflects the changes you made:
-   `git commit -m "commit message"`
-7. Link your local Git repository to the remote repository:
-   `git remote add origin "your git repo HTTPS URL"`
-8. Push your code to the remote repository:
-   `git push origin react-dev`
+3. Run the following to initialize to make local repository of your project folder
+   - `git init`
+4. By default, Git will point to the master branch. Create a new development branch and switch to it
+   - `git checkout -b react-dev`
+   - `git branch react-dev` and `git checkout react-dev`
+5. Add all your files to Git
+   - `git add .`
+6. Add a commit message that reflects the changes you made
+   - `git commit -m "commit message"`
+7. Link your local Git repository to the remote repository
+   - `git remote add origin "your git repo HTTPS URL"`
+8. Push your code to the remote repository
+   - `git push origin react-dev`
 
 ## What is NPM?  
-Source: [https://github.com/npm/npm-expansions]
-NPM is not just a Node Package Manager; it manages packages. How?  
-It serves as a central repository for the largest package manager, where all the essential core libraries are hosted. If you want to add any utilities, libraries, or packages, you can use NPM.
+Source: https://github.com/npm/npm-expansions
+
+- NPM is not just a Node Package Manager; it manages packages. How?  
+- It serves as a central repository for the largest package manager, where all the essential core libraries are hosted. If you want to add any utilities, libraries, or packages, you can use NPM.
 
 When you create a React app using `create-react-app`, NPM is included by default, so you don't need to configure it separately.
 
@@ -45,8 +47,8 @@ A bundler is a tool that combines and optimizes project files for production. To
 
 ## What is the difference between tilde vs. caret operator in package.json file?
  `"parcel": "^2.13.3"`
-    Tilde - upgrade the dependency to major version
-    Caret - upgrade the dependency to minor version, but it always recommended to upgrade to minor version. Read, why?
+    - Tilde - upgrade the dependency to major version
+    - Caret - upgrade the dependency to minor version, but it always recommended to upgrade to minor version. Read, why?
 
 ## What is package-lock.json file?
 Both the package.json and package-lock.json files should be pushed to the Git repository.
