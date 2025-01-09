@@ -31,5 +31,5 @@ React Fiber is the new reconciliation engine (algorithm) introduced in React 16.
     - Concurrency
     - Prioritization of updates
 
-## source : https://github.com/acdlite/react-fiber-architecture
+**source:** https://github.com/acdlite/react-fiber-architecture
 Learn about component, instance, react element, reconciliation and lot more.

@@ -21,7 +21,7 @@ We have pushed all our code to the Git repository by following these steps:
    - `git push origin react-dev`
 
 ## What is NPM?  
-Source: https://github.com/npm/npm-expansions
+**source:** https://github.com/npm/npm-expansions
 
 - NPM is not just a Node Package Manager; it manages packages. How?  
 - It serves as a central repository for the largest package manager, where all the essential core libraries are hosted. If you want to add any utilities, libraries, or packages, you can use NPM.
@@ -40,7 +40,7 @@ Packages are often referred to as dependencies because your project may rely on 
 What is bundler? What is parcel? What is webpack? - Why do we need them?
 A bundler is a tool that combines and optimizes project files for production. Tools like Parcel and Webpack bundle your code by performing tasks such as minification, compression, and cleaning up the code, ensuring that your project is production-ready.
 
-## There are two types of dependencies can be installed:
+## Two ways of installing dependencies
     a. Dev dependency: For development environment
        `npm install -D[--save-dev] dependency_name`
     b. Normal dependency: For both development and production environment
@@ -56,22 +56,21 @@ Both the package.json and package-lock.json files should be pushed to the Git re
 - `package-lock.json:` Records the exact versions of dependencies.
 
 1. What is the integrity property in parcel within the package-lock.json file?
-The integrity property ensures that the development and production environments use the same version of a package, solving version discrepancies.
+   The integrity property ensures that the development and production environments use the same version of a package, solving version discrepancies.
 
 2. Why don't we need to push the node_modules folder into the Git repo?
-Since the package.json and package-lock.json files are already available, we can regenerate the node_modules folder by running the command: npm install.
+   Since the package.json and package-lock.json files are already available, we can regenerate the node_modules folder by running the command: npm install.
 
 3. what is .gitignore file?
 
 ## PART - 2
 ## Why CDN Links Are Not the Recommended Approach
+- CDN links are not ideal for working with React because they are typically imported using script tags with a `src` attribute, which points to a URL. This results in a separate network call to fetch the required code for the project, making it costly and inefficient. Instead, the code can be easily accessed through NPM in the `node_modules` folder, avoiding the need for extra network requests.
 
-CDN links are not ideal for working with React because they are typically imported using script tags with a `src` attribute, which points to a URL. This results in a separate network call to fetch the required code for the project, making it costly and inefficient. Instead, the code can be easily accessed through NPM in the `node_modules` folder, avoiding the need for extra network requests.
-
-Additionally, when the version of React changes, you would need to manually update the URL. With NPM, however, it handles version management automatically during installation or upgrades.
+- Additionally, when the version of React changes, you would need to manually update the URL. With NPM, however, it handles version management automatically during installation or upgrades.
 
 ## Why parcel?
-## source: https://parceljs.org/
+**source:** https://parceljs.org/
 Parcel Features
 - Zero Configuration
 - npx parcel index.html (dev build)
@@ -90,8 +89,7 @@ Parcel Features
 - Tree Shaking - remove unused code
 
 ## How to Create a Production Build Using Parcel?
-
-Run the command `npx parcel build index.html`. However, you may encounter an error due to the `App.js` entry point specified in the `package.json` file. To avoid this, remove it and then execute the command again.
+   Run the command `npx parcel build index.html`. However, you may encounter an error due to the `App.js` entry point specified in the `package.json` file. To avoid this, remove it and then execute the command again.
 
 Workflow:  
 - **Local Environment** → Git Repository  
