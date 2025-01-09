@@ -23,7 +23,7 @@ By default, browsers block requests from one origin (e.g., http://localhost:3000
 1. Search Fuctionality Implementation
 
 
-Note: React renders fastly [because of its renders lifecycle] - One of the best characteristics of React
+**Note:** React renders fastly [because of its renders lifecycle] - One of the best characteristics of React
 
 ## LEARN MORE
 Allow CORS Chrome Extension - just to bypass CORS termporarily

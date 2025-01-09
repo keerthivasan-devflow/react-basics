@@ -1,9 +1,9 @@
 # Hooks concept / Reconciliation / Virtual DOM / React Fiber
 
 ## PART - 1
-Cleaning up the project files or folders
-Folder structure
-Named/Default Imports/Exports
+- Cleaning up the project files or folders
+- Folder structure
+- Named/Default Imports/Exports
 
 ## PART - 2
 ## HOOKS CONCEPT
