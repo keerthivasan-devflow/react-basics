@@ -1,8 +1,10 @@
+import User from "../classy/User";
 
 const About = () => {
   return (
     <>
-      <h1>About page component</h1>
+      <h1>Class Component Implementation</h1>
+      <User name={"keerthivasan"} location={"Trichy"}/>
     </>
   );
 };

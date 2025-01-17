@@ -27,7 +27,7 @@ The source code available through these CDN links is written by Facebook (specif
         The `render()` method is responsible for taking the React element as an argument, converting it into the corresponding DOM element (e.g., an `h1` tag), and placing it into the DOM tree so that the browser can understand and display it.  
     1.4. How do you add attributes to tags in React?  
 
-2. What is the most expensive operation on a webpage?  
+2. What is the most expensive (time consuming) operation on a webpage?  
     DOM Manipulation - When a webpage becomes more interactive and the DOM tree changes frequently, this operation becomes costly. To optimize this, libraries have been introduced.
 
 ## PART 4
