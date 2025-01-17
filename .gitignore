@@ -1,5 +1,5 @@
 # React
-react-practical/node_modules
+react-basics/node_modules
 react-material-styled/node_modules
 react-typescript/node_modules
 react-toolkit-saga/node_modules
@@ -9,9 +9,9 @@ react-testing/node_modules
 react-testing/coverage
 
 # React Explore Folder
-react-explore/node_modules
-react-explore/.parcel-cache
-react-explore/dist
+react-dev/node_modules
+react-dev/.parcel-cache
+react-dev/dist
 notes/CORS.md
 notes/monolithic.md
 notes/microservice.md

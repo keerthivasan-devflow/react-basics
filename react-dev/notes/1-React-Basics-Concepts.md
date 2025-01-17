@@ -1,7 +1,7 @@
 # React Introduction
 ## PART - 1
 1. How to write a "Hello World" program using pure HTML?  
-2. How to write a "Hello World" program using JavaScript and display it in the Chrome browser?  
+2. How to write a "Hello World" program using JavaScript?  
 3. Everything about Content Delivery Network (CDN) links  
     3.1. What does it mean?  
     3.2. Why do we need it?  
