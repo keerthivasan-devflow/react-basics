@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+## PART 1 - Class Based Components
+ - Simple Class Component Creation
+ - Pass props to class component
+ - Children Prop
+ - Define state variable
+ - Updating the state variable `this.setState()`
+ - Destructuring State and Props
+ - Conditional Rendering
+ - Event Handling
+ - Rendering List (along with key and index prop usage)
+ - Controlled vs Uncontrolled Components
+ - Basic Form Handling
+ - Lifecycle Methods
+ - Pure Components
+ - Refs
+ - React Portals
+ - Higher Order Component - Lifting state
+ - Render Props
+ - Context API - Props drilling
+ - HTTP Request - GET, POST, PUT, DELETE
+ - Reconciliation
+ - React Fiber
+ - Synthetic Events
+ - React Hydrate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## PART 2 - Hooks Concepts
+ - useState()
+ - useEffect()
+ - useContext()
+ - useRef()
+ - useContext()
+ - useReducer()
+ - useMemo()
+ - useCallback()
+ - Custom Hooks
+ - React 18 Hooks
+    - useId()
+    - useDeferredValue()
+    - useImperativeHandle()
+    - useTransition()
+    - useLayoutEffect()
+    - useDebugValue()
 
-## Available Scripts
+## PART 3 - Redux
 
-In the project directory, you can run:
+## PART 4 - Router
+ - Configuring Routes
+    - BrowserRouter, Router and Route
+    - Link and NavLink
+    - HashRouter and MemoryRouter
+    - Navigate
+    - Relative Links Should Not Start with `/`
+ - Navigating Programmatically
+    - Navigating on Button Click Using the `useNavigate()`  
+    - Navigating Back to a Previously Rendered Page  
+    - Using the `useLocation()`
+ - Match Route/Page Not Found (using `*`)
+ - Nested Routes
+ - Index Route
+ - Dynamic Route
+ - URL Parameters `useParams()`
+ - Search Parameters `useSearchParams()`
+ - Lazy Loading
+ - Authentication
 
-### `npm start`
+## PART 5 - React Form Hook Library
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Frequently asked interview questions
+### React Core Concepts
+1. Library vs. framework
+2. Is React declarative or imperative?
+3. What is declarative and imperative programming? Provide examples.
+4. What is a component?
+5. Advantages and disadvantages of declarative vs. imperative approaches
+6. What is the virtual DOM?
+7. What is Babel
+8. Comparison of state and props
+9. What happens if we define state outside the constructor?
+10. Comparison of functional vs. class components
+11. What is JSX?
+12. How to pass all the props at once?
+13. Passing a prop to a parent component from a child component
+14. Event handling – binding event handlers in four ways
+15. Pure components
+16. Context API
+    - How to set default values for the context provider  
+    - Three ways to access the context value with class components  
+    - Limitations of accessing the context value with `contextType`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Hooks Concepts
+1.	What is a Hook and Why Do We Need It?
+2.	useState() 
+    - What is useState?
+    - What are the hidden tricks of the useState hook?
+    - How can useState be implemented with primitive and non-primitive values?
+    - What are the drawbacks or limitations of the useState hook?
+3.	useEffect()
+    - What is useEffect()?
+    - How many parameters can useEffect() hold?
+    - Does useEffect() return any values?
+    - How can useEffect() be invoked based on specific actions, not on every re-render?
+    - How can useEffect() be called only once in React?
+    - How can useEffect() be used with cleanup?
+4.	useReducer()
+    - How to implement a simple useReducer?
+    - How to implement an initial state as an object and work with useReducer?
+    - How to implement actions as objects and work with useReducer?
+    - How to implement multiple useReducer hooks?
+    - How to use useReducer with useContext?
+    - How to use useReducer with useEffect?
+    - What are the differences between useState and useReducer?
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Redux Concepts
+1.	What is redux and why do we need it?
+2.	What are the three core concepts/principles of redux?
+3.	Multiple reducers w/ combine Reducers
+4.	What is middleware?
+5.	What is redux thunk?
+6.	What is immer package?
+7.	What is react redux package?
