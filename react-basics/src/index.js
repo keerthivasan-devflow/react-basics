@@ -4,25 +4,25 @@ import reportWebVitals from "./reportWebVitals.js";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 // Top Level Components Link
-import MenuBar from "./menubar/MenuBar.js";
-import HomeNavbar from "./menubar/HomeNavbar.js";
-import HookNavbar from "./menubar/HookNavbar.js";
-import PerformanceNavbar from "./menubar/PerformanceNavbar.js";
+import MenuBar from "./routers/menubar/MenuBar.js";
+import HomeNavbar from "./routers/menubar/HomeNavbar.js";
+import HookNavbar from "./routers/menubar/HookNavbar.js";
+import PerformanceNavbar from "./routers/menubar/PerformanceNavbar.js";
 import Context from "./containers/Context.js";
 import Redux from "./containers/Redux.js";
 import RegisterForm from "./react-form-hook/RegsiterForm.js";
 import Dashboard from "./routers/Dashboard.js";
 
-import ErrorBoundary from "./basic-components/ErrorBoundary.js";
-import HeroComponent from "./basic-components/HeroComponent.js";
-import ParentComponent from "./basic-components/ParentComponent.js";
+import ErrorBoundary from "./classy/basic-components/ErrorBoundary.js";
+import HeroComponent from "./classy/basic-components/HeroComponent.js";
+import ParentComponent from "./classy/basic-components/ParentComponent.js";
 
 import HookState from "./hooks/HookState.js";
 import HookEffect from "./hooks/HookEffect.js";
 import HookMemo from "./hooks/HookMemo.js";
 import HookCallback from "./hooks/hook-callback/HookCallback.js";
 
-import ParentComp from "./pure-components/ParentComp.js";
+import ParentComp from "./classy/pure-components/ParentComp.js";
 import RenderProps from "./containers/RenderProps.js";
 import HOC from "./containers/HOC.js";
 import User from "./routers/User.js";

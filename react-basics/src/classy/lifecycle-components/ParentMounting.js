@@ -23,8 +23,9 @@ class ParentMounting extends Component {
     console.log("Lifecycle Render Method A");
     return (
       <React.Fragment>
-        <div>Lifecycle A Methods</div>
-        <ChildMouting />
+        <div>Parent Mounting Lifecycle Methods</div>
+        <ChildMouting name="first" />
+        <ChildMouting name="second"/>
       </React.Fragment>
     );
   }

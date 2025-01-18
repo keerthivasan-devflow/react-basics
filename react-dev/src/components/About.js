@@ -1,10 +1,10 @@
-import User from "../classy/User";
+import Example from "../classy/Example";
 
 const About = () => {
   return (
     <>
       <h1>Class Component Implementation</h1>
-      <User name={"keerthivasan"} location={"Trichy"}/>
+      <Example name={"keerthivasan"} location={"Trichy"}/>
     </>
   );
 };

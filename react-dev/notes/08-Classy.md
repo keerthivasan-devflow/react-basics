@@ -33,6 +33,6 @@ Class:
 7. Is it possible to use `this.setState()` anywhere within a class component? Yes.  
 8. Why is it not recommended to update the state directly? What are the consequences?  
 9. When does a React component re-render?
-10. componentWillUnmount() - When does it happen? usually while navigating from one page to another page because React is a Single Page Application. Everything renders on a single page without refreshing or reloading the page.
+10. componentWillUnmount() - When does it happen? usually while navigating from one page to another page because React is a Single Page Application. Everything renders on a single page without refreshing or reloading the page. - Major disadvantages of SPA
 
 45.00 start to continue...

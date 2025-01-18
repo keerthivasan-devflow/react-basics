@@ -1,7 +1,7 @@
 import React from "react";
-import RenderComponent from "../render-props-component/RenderComponent.js";
-import RenderClick from "../render-props-component/RenderClick.js";
-import RenderHover from "../render-props-component/RenderHover.js";
+import RenderComponent from "../classy/render-props-component/RenderComponent.js";
+import RenderClick from "../classy/render-props-component/RenderClick.js";
+import RenderHover from "../classy/render-props-component/RenderHover.js";
 
 const RenderApp = () => {
   return (

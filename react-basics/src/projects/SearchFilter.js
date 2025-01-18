@@ -3,7 +3,7 @@
 // 15.30 search content from API Backend server
 import React, { useState } from "react";
 import "../assets/css/styles.css";
-import { users } from "../data/users.js";
+import {users} from "../utils/users.js"
 
 const SearchFilter = () => {
   const [query, searchQuery] = useState("");

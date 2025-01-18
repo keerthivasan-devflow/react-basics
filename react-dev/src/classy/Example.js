@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class User extends Component {
+class Example extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,17 +23,23 @@ class User extends Component {
       // update the state value here also
     });
     console.log(response);
+
+    this.interval = setInterval(() => {
+      console.log("Set Interval");
+    }, 1000);
   };
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(
-      "Component updated whenever it requires, this will also trigger re-renders"
-    );
+    if (this.state.count !== prevState.count) {
+      console.log("Component updated whenever it requires");
+    }
   }
 
-  componentWillUnmount(){
-    console.log("Component will unmount")
+  componentWillUnmount() {
+    clearInterval(this.interval);
+    console.log("Component will unmount");
   }
+
 
   render() {
     const { name, location } = this.props;
@@ -52,4 +58,4 @@ class User extends Component {
   }
 }
 
-export default User;
+export default Example;

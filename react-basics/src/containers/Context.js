@@ -1,6 +1,6 @@
 import React from "react";
-import { ChannelProvider } from "../context-api/ContextComponent.js";
-import ContextA from "../context-api/ContextA.js";
+import { ChannelProvider } from "../classy/context-api/ContextComponent.js";
+import ContextA from "../classy/context-api/ContextA.js";
 
 const ContextApp = () => {
   return (
