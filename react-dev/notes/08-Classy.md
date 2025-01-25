@@ -22,6 +22,7 @@ Class:
 4. Why must we call `super(props)` inside the constructor?  
 5. Note: Any props passed to a class component can be accessed anywhere within the class using `this.props`.
 **6. Output of the following code snippet:** This code will work without any error but not good practice
+Note:  Whether this.state is a keyword or not? Yes, however below code works perfectly right
     this.state = {
       count: 0,
     };

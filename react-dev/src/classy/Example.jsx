@@ -46,7 +46,7 @@ class Example extends Component {
     const { count } = this.state;
     return (
       <>
-        <h3>User Details</h3>
+        <h2>User Details</h2>
         <p>Name: {name}</p>
         <p>Location: {location}</p>
         <p>Count: {count}</p>

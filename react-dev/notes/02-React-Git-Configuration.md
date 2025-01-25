@@ -50,6 +50,19 @@ A bundler is a tool that combines and optimizes project files for production. To
 - Tilde - upgrade the dependency to major version
 - Caret - upgrade the dependency to minor version, but it always recommended to upgrade to minor version. Read, why?
 
+### Version numbers in detail
+are typically represented with three digits: major, minor, and patch.
+
+**Patch version (e.g., 4.19.2 → 4.19.3)** indicates a small change or bug fix. Upgrading to a new patch version is generally safe as it does not introduce breaking changes, so you can safely update your project.
+
+**Minor version (e.g., 4.19.2 → 4.20.3)** represents the addition of new features that are backward-compatible with previous versions. Upgrading to a new minor version is also considered safe for your project, as it doesn't break existing functionality.
+
+**Major version (e.g., 4.19.2 → 5.20.3)** introduces changes that may break backward compatibility, meaning it could potentially break your existing code. Updating to a new major version may require code changes in your project.
+
+- If you specify a version without any symbol before it in your package.json, the project will always use that specific version and will not automatically update to newer versions.
+
+- If you use the ^ (caret) symbol before a version, it allows your project to automatically update to the latest compatible version within the same major version range. The package-lock.json file will still lock the exact version of the package used, ensuring consistency across installations.
+
 ### What is package-lock.json file?
 Both the package.json and package-lock.json files should be pushed to the Git repository.
 - `package.json:` Specifies approximate versions of dependencies.
