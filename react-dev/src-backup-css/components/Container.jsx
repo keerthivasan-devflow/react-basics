@@ -34,19 +34,20 @@ const Container = () => {
   };
 
   return (
-    <main>
-      <div className="flex mx-2 justify-center">
-        {/* <button
+    <main className="main-content">
+      <div className="button-search-container">
+        <button
           type="button"
           id="top-rated-btn"
-          className="bg-blue-800 w-50"
+          className="btn top-rated-btn"
           onClick={getTopRatedRestaurants}
         >
           Top Rated Restaurants
-        </button> */}
+        </button>
         <input
           type="search"
-          className="border-2 border-green-500 w-100 py-1 text-center"
+          id="search"
+          className="search-input"
           placeholder="Search your favorite restaurant"
           value={searchText}
           onChange={GetSearchTextFromUser}
@@ -54,14 +55,14 @@ const Container = () => {
         <button
           type="button"
           id="search-btn"
-          className="bg-green-500 w-50 text-white"
+          className="btn search-btn"
           onClick={FilteredList}
         >
           Search
         </button>
       </div>
 
-      <div className="flex flex-wrap justify-center">
+      <div className="restaurant-list">
         {state.map((restaurant) => (
           <RestaurantCard
             restaurantData={restaurant}

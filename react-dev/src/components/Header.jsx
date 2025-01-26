@@ -4,53 +4,38 @@ import { Link } from "react-router";
 
 const Header = () => {
   const [isLoggedIn, setLoggedIn] = useState(true);
-  
+
   const handleAuthentication = () => {
     setLoggedIn((prevState) => !prevState);
   };
 
   return (
-    <header className="header">
-      <div className="header-logo">
-        <img
-          className="logo"
-          src={logo}
-          alt="Logo"
-          title="Logo"
-          width="100"
-          height="100"
-        />
+    <header className="flex justify-between bg-green-500 m-2 p-4 shadow-lg text-white">
+      <div>
+        <img className="w-24" src={logo} alt="Logo" title="Logo" />
       </div>
-      <nav className="navbar">
-        <ul className="navbar-list">
-          <li className="navbar-item">
-            <Link to={"/"} className="navbar-link">
-              Home
-            </Link>
+      <div className="flex items-center">
+        <ul className="flex">
+          <li className="px-4">
+            <Link to={"/"}>Home</Link>
           </li>
-          <li className="navbar-item">
-            <Link to={"/about"} className="navbar-link">
-              About
-            </Link>
+          <li className="px-4">
+            <Link to={"/about"}>About</Link>
           </li>
-          <li className="navbar-item">
-            <Link to={"/contact"} className="navbar-link">
-              Contact
-            </Link>
+          <li className="px-4">
+            <Link to={"/contact"}>Contact</Link>
           </li>
-          <li className="navbar-item">
-            <Link to={"/cart"} className="navbar-link">
-              Cart
-            </Link>
+          <li className="px-4">
+            <Link to={"/cart"}>Cart</Link>
           </li>
-          <li className="navbar-item" onClick={handleAuthentication}>
-            <Link to={"/login"} className="navbar-link">
+          <li className="px-4" onClick={handleAuthentication}>
+            <Link to={"/login"}>
               {/* {isLoggedIn ? "Login" : "Logout"} */}
               Login
             </Link>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
   );
 };
