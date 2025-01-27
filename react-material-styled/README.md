@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+## Styled Components
+1. Basic Styled Component Creation - using template literals `styled.div (OR) styled("div")`
+2. Adapting css based on props
+3. Extending styles - styled() constructor
+4. What is polymorphic prop and how to define it
+5. How to add CSS with pseudo-classes?
+6. How to add attributes at once? `object - attrs({}) (OR) arrow function which returns an object attrs(()=>({}))`
+7. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+makeStyles
+createStyles
+withStyles
+useStyles
 
-In the project directory, you can run:
+Theme Customization:
+--------------------
+Default Theme or Theme Object
+Function: createTheme()
+Hook: useTheme()
+What is ThemeProvider w/ theme prop
+Can we have mutiple <ThemeProvider> in single component - To apply specific styles to specific parts of a component
 
-### `npm start`
+Integration with CssBaseline: It is common practice to use <CssBaseline /> in 
+combination with <ThemeProvider> to ensure a consistent baseline of CSS styles across different browsers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Palette Objects
+----------------------
+Primary: The main color of your app, often used for key elements like buttons, links, and highlights.
+Secondary: An additional color that complements the primary color, used for secondary actions or accents.
+Error: Defines the color for error messages and components related to errors.
+Warning: Defines the color for warning messages and components.
+Info: Defines the color for informational messages or components.
+Success: Defines the color for success messages or components.
+Text: Defines the color for text (usually includes primary, secondary, and disabled text).
+Background: Defines the background colors for different sections of the app.
+Divider: Color for dividers or borders.
+Action: Defines the colors for interactive elements like hover states or selected items.

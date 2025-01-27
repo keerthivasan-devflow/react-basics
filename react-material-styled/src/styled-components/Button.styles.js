@@ -1,21 +1,20 @@
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
-  background-color: ${(props) =>
-    props.variant === "outlined" ? "white" : "crimson"};
-  color: ${(props) => (props.variant === "outlined" ? "crimson" : "white")};
-  border-radius: 15px 15px;
-  border: ${(props) =>
-    props.variant === "outlined" ? "crimson solid 3px" : "none"};
-  width: 350px;
-  padding: 20px;
+  background-color: ${({ variant }) =>
+    variant === "outlined" ? "white" : "crimson"};
+  color: ${({ variant }) => (variant === "outlined" ? "crimson" : "white")};
+  border: ${({ variant }) =>
+    variant === "outlined" ? "crimson solid 3px" : "none"};
+  width: 300px;
+  padding: 10px;
   font-size: 16px;
   &:hover {
-    background-color: ${(props) =>
-      props.variant !== "outlined" ? "white" : "crimson"};
-    color: ${(props) => (props.variant !== "outlined" ? "crimson" : "white")};
-    border: ${(props) =>
-      props.variant !== "outlined" ? "crimson solid 3px" : "none"};
+    background-color: ${({ variant }) =>
+      variant !== "outlined" ? "white" : "crimson"};
+    color: ${({ variant }) => (variant !== "outlined" ? "crimson" : "white")};
+    border: ${({ variant }) =>
+      variant !== "outlined" ? "crimson solid 3px" : "none"};
   }
 `;
 
@@ -25,9 +24,14 @@ export const FancyButton = styled(StyledButton)`
     #4aec22 0%,
     rgb(161, 17, 43) 100%
   );
+  &:hover {
+    background: lightgreen;
+    color: white;
+    border: none;
+  }
 `;
 
-export const SubmitButtonType = styled(StyledButton).attrs({
+export const SubmitButton = styled(StyledButton).attrs({
   type: "submit",
   className: "submit-btn",
 })`
