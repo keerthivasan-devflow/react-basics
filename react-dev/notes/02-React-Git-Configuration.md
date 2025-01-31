@@ -1,4 +1,4 @@
-# Git Configuration / NPM / PARCEL Library
+# Git Configuration / NPM / PARCEL
 
 ## PART - 1
 ### Git Configuration
@@ -22,7 +22,7 @@ We have pushed all our code to the Git repository by following these steps:
 
 ### What is Node Package Manager (NPM)?
 - https://github.com/npm/npm-expansions
-- NPM is not just a Node Package Manager; It doesn't have any  particular full form
+- NPM is not just a Node Package Manager; It doesn't have any particular full form of NPM.
 - It manages all the packages. How?  
 - It serves as a central repository for the largest package manager, where all the essential core npm libraries are hosted. If you want to add any utilities, libraries, or packages, you can use NPM.
 - Note: When you create a React app using `create-react-app`, NPM is included by default, so you don't need to configure it separately.
@@ -49,7 +49,7 @@ Note: When initializing a React application with create-react-app, it uses the w
    2. Normal dependency: For both development and production environment
 
 ### What is the difference between tilde vs. caret operator in package.json file? 
-https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
+- https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
 - **Example:** `"parcel": "^2.13.3"`
 - Tilde - upgrade the dependency to major version
 - Caret - upgrade the dependency to minor version but it always recommended to upgrade to minor version. Read, why?
