@@ -5,53 +5,57 @@
 We have pushed all our code to the Git repository by following these steps:
 
 1. Create a GitHub account and log in.
-2. Create a new repository for your React project (you can create as many repositories as you need).
-3. Run the following to initialize to make local repository of your project folder
+2. Create a new remote repository for your React project (you can create as many repositories as you need).
+3. Run the following to make your project folder as local git repository
    - `git init`
 4. By default, Git will point to the master branch. Create a new development branch and switch to it
-   - `git checkout -b react-dev`
-   - `git branch react-dev` and `git checkout react-dev`
+   - `git checkout -b react-dev` (OR) `git branch react-dev` and `git checkout react-dev`
 5. Add all your files to Git
    - `git add .`
-6. Add a commit message that reflects the changes you made
+6. Add a commit message 
+   - Note: documentation for what was altered, added, or fixed in the code at that point in the project’s history.
    - `git commit -m "commit message"`
 7. Link your local Git repository to the remote repository
    - `git remote add origin "your git repo HTTPS URL"`
 8. Push your code to the remote repository
    - `git push origin react-dev`
 
-### What is Node Package Manager (NPM)?  
-**source:** https://github.com/npm/npm-expansions
-
-- NPM is not just a Node Package Manager; it manages packages. How?  
-- It serves as a central repository for the largest package manager, where all the essential core libraries are hosted. If you want to add any utilities, libraries, or packages, you can use NPM.
-
-When you create a React app using `create-react-app`, NPM is included by default, so you don't need to configure it separately.
+### What is Node Package Manager (NPM)?
+- https://github.com/npm/npm-expansions
+- NPM is not just a Node Package Manager; It doesn't have any  particular full form
+- It manages all the packages. How?  
+- It serves as a central repository for the largest package manager, where all the essential core npm libraries are hosted. If you want to add any utilities, libraries, or packages, you can use NPM.
+- Note: When you create a React app using `create-react-app`, NPM is included by default, so you don't need to configure it separately.
 
 ### Let's integrate npm into our project  
-### What is the package.json file?  
 You can initialize it by running the command:  
-`npm init` or `npm init -y`  
+`npm init` or `npm init -y`
 
-This command creates a `package.json` file, which contains the basic configuration for NPM. But why is this file necessary?  
-Packages are often referred to as dependencies because your project may rely on certain packages. These are called dependencies, and NPM will manage them for you. NPM tracks information about these dependencies in the `package.json` file.
+**What is the package.json file?** The above command creates a `package.json` file, which contains the basic configuration for NPM but why is this file necessary? Packages are often referred to as dependencies because your project may rely on certain packages. These are called dependencies, and NPM will manage them for you. NPM keeps track of information about these dependencies in the `package.json` file.
 
-### Let's install bundler - Anything you like to
-What is bundler? What is parcel? What is webpack? - Why do we need them?
-A bundler is a tool that combines and optimizes project files for production. Tools like Parcel and Webpack bundle your code by performing tasks such as minification, compression, and cleaning up the code, ensuring that your project is production-ready.
+### Let's start installing dependencies / Let's install bundler (PARCEL)
+**Anything you like to:**
+- What is bundler? 
+- What is parcel?
+- What is webpack?
+   A bundler is a tool that combines and optimizes project files for production. Tools like Parcel and Webpack bundle your code by performing tasks such as minification, compression, and cleaning up the code, ensuring that your project is production-ready. *Bundler is the most important package in our project.*
+
+Note: When initializing a React application with create-react-app, it uses the webpack bundler and Babel. However, in our project, we prefer using the PARCEL bundler due to its many powerful features. Install it using npm like following: 
+`npm install -D parcel`
 
 ### Two ways of installing dependencies
    1. Dev dependency: For development environment
        `npm install -D[--save-dev] dependency_name`
    2. Normal dependency: For both development and production environment
 
-### What is the difference between tilde vs. caret operator in package.json file?
+### What is the difference between tilde vs. caret operator in package.json file? 
+https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
 - **Example:** `"parcel": "^2.13.3"`
 - Tilde - upgrade the dependency to major version
-- Caret - upgrade the dependency to minor version, but it always recommended to upgrade to minor version. Read, why?
+- Caret - upgrade the dependency to minor version but it always recommended to upgrade to minor version. Read, why?
 
 ### Version numbers in detail
-are typically represented with three digits: major, minor, and patch.
+Typically represented with three digits: major, minor, and patch.
 
 **Patch version (e.g., 4.19.2 → 4.19.3)** indicates a small change or bug fix. Upgrading to a new patch version is generally safe as it does not introduce breaking changes, so you can safely update your project.
 
@@ -75,6 +79,12 @@ Both the package.json and package-lock.json files should be pushed to the Git re
    Since the package.json and package-lock.json files are already available, we can regenerate the node_modules folder by running the command: npm install.
 
 3. what is .gitignore file?
+4. What are transitive dependencies in package.json?
+
+5. How many package.json files are typically found in a single project?
+   Each dependency will have its own package.json.
+
+6. Should the node_modules folder be pushed to a remote repository? What happens if it gets deleted accidentally?
 
 ## PART - 2
 ### Why CDN links are not the recommended approach
@@ -83,8 +93,7 @@ Both the package.json and package-lock.json files should be pushed to the Git re
 - Additionally, when the version of React changes, you would need to manually update the URL. With NPM, however, it handles version management automatically during installation or upgrades.
 
 ### Why parcel?
-**source:** https://parceljs.org/
-Parcel Features
+Parcel Features - https://parceljs.org/
 - Zero Configuration
 - npx parcel index.html (dev build)
 - host it on a local server
