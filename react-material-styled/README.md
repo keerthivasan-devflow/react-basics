@@ -8,6 +8,9 @@
 7. 
 
 
+## React Material UI Components
+Note: Whatever component you import, which will have class names such as MuiCard-root, MuiStack-root, MuiButton-root etc
+
 makeStyles
 createStyles
 withStyles
