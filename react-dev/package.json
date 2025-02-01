@@ -2,10 +2,9 @@
   "name": "react-experiments",
   "version": "1.0.0",
   "description": "This is react core concepts for beginners",
-  "main": "App.js",
   "scripts": {
     "start": "parcel ./public/index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build ./public/index.html",
     "test": "jest"
   },
   "repository": {
