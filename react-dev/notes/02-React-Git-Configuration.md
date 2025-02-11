@@ -27,26 +27,28 @@ We have pushed all our code to the Git repository by following these steps:
 - It serves as a central repository for the largest package manager, where all the essential core npm libraries are hosted. If you want to add any utilities, libraries, or packages, you can use NPM.
 - Note: When you create a React app using `create-react-app`, NPM is included by default, so you don't need to configure it separately.
 
+### What is a package?
+- A package is a file or directory that is described by a package.json file. A package must contain a package.json file in order to be published to the npm registry. The npm registry contains packages, many of which are also Node modules, or contain Node modules
+
 ### Let's integrate npm into our project  
 You can initialize it by running the command:  
 `npm init` or `npm init -y`
 
-**What is the package.json file?** The above command creates a `package.json` file, which contains the basic configuration for NPM but why is this file necessary? Packages are often referred to as dependencies because your project may rely on certain packages. These are called dependencies, and NPM will manage them for you. NPM keeps track of information about these dependencies in the `package.json` file.
+What is the package.json file? → The above command creates a `package.json` file, which contains the basic configuration for NPM but why is this file necessary? Packages are often referred to as dependencies because your project may rely on certain packages. These are called dependencies, and NPM will manage them for you. NPM keeps track of information about these dependencies in the `package.json` file.
 
 ### Let's start installing dependencies / Let's install bundler (PARCEL)
-**Anything you like to:**
 - What is bundler? 
 - What is parcel?
 - What is webpack?
    A bundler is a tool that combines and optimizes project files for production. Tools like Parcel and Webpack bundle your code by performing tasks such as minification, compression, and cleaning up the code, ensuring that your project is production-ready. *Bundler is the most important package in our project.*
 
-Note: When initializing a React application with create-react-app, it uses the webpack bundler and Babel. However, in our project, we prefer using the PARCEL bundler due to its many powerful features. Install it using npm like following: 
-`npm install -D parcel`
+   Note: When initializing a React application with create-react-app, it uses the webpack bundler and Babel. However, in our project, we prefer using the PARCEL bundler due to its many powerful features. Install it using npm like following: 
+   `npm install -D parcel`
 
 ### Two ways of installing dependencies
-   1. Dev dependency: For development environment
+   1. Dev dependency → For development environment
        `npm install -D[--save-dev] dependency_name`
-   2. Normal dependency: For both development and production environment
+   2. Normal dependency → For both development and production environment
 
 ### What is the difference between tilde vs. caret operator in package.json file? 
 - https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
@@ -95,6 +97,8 @@ Both the package.json and package-lock.json files should be pushed to the Git re
 - CDN links are not ideal for working with React because they are typically imported using script tags with a `src` attribute, which points to a URL. This results in a separate network call to fetch the required code for the project, making it costly and inefficient. Instead, the code can be easily accessed through NPM in the `node_modules` folder, avoiding the need for extra network requests.
 
 - Additionally, when the version of React changes, you would need to manually update the URL. With NPM, however, it handles version management automatically during installation or upgrades.
+
+- Let's integrate react and react-dom using NPM
 
 ### Why parcel?
 - Parcel creates the development build and hosts it on a local server at port 1234.

@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import "../../user.css"
 
 const Usersubmit = () => {
   return (
@@ -35,7 +36,7 @@ const Usersubmit = () => {
         Forgot your password?
       </Link>
       <p className="signup-prompt">
-        Don't have an account?{" "}
+        Don't have an account? / {" "}
         <Link to="/sign-up" className="signup-link">
           Sign Up
         </Link>

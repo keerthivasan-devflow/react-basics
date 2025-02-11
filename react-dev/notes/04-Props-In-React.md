@@ -1,5 +1,16 @@
 # Props / De-Structuring Props
 
+## Planning 
+- Header
+  - Logo
+  - Navigation Menus
+- Body
+ - Search Bar
+ - Restaurant Card
+- Footer
+ - Copyright Info
+ - Social Links
+
 ## PART - 1
 1. How to write an inline style in React?
 
