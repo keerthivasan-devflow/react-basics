@@ -1,15 +1,17 @@
-## LEARN MORE ABOUT REACT
+## Our Food Application
+## Planning 
+- Header
+  - Logo
+  - Navigation Menus
+- Body
+ - Search Bar
+ - Restaurant Container
+    - Restaurant Card
+- Footer
+ - Copyright Info
+ - Social Links
 
-### Our Food Application
-Header
-  Logo
-  MenuBar
-Body
-  Search
-  RestaurantContainer
-    RestaurantCard
-Footer
-  Copyright
-  Contact
-  About
-  Social
+
+ https://github.com/Bharat2044/Namaste-React
+
+ https://logo.com/dashboard

@@ -33,3 +33,5 @@ React Fiber is the new reconciliation engine (algorithm) introduced in React 16.
 
 **source:** https://github.com/acdlite/react-fiber-architecture
 Learn about component, instance, react element, reconciliation and lot more.
+
+1. Why do we need React when everything can be achieved using just HTML, CSS, and JavaScript?

@@ -109,10 +109,11 @@ Both the package.json and package-lock.json files should be pushed to the Git re
    - Hot Module Replacement (automatically refreshes the page) → Parcel uses File Watching Algorithm  (written in C++)
    - Image Optimization
    - Fast Bundling with support for caching and multi-core processing (try to save file and check terminal)
+      **Bundling refers to the process of combining all the files into a single compressed file after minification, compression, and other optimizations. While the size of the resulting file may be larger, bundling is still necessary. This is because, in a project with 100 files, it's inefficient to load each file individually. Instead, loading smaller bundles of these files is more efficient, a technique known as code splitting. This process improves performance by reducing the number of requests made for each file.**
    - Minification
    - Compression
    - Content Hashing
-   - Code Splitting
+   - Code Splitting / Chunking / Dynamic Bundling OR Import / Lazy Loading - Logical separation of codes [on-demand loading]
    - Differential Bundling → Browsers compatibility
    - Diagnostic Features → Error Handling Features
    - HTTPS

@@ -1,4 +1,4 @@
-# Monolithic / Micro-Frontend Service / useEffect() hook / Basics of CORS Policy
+# Monolithic / Micro-Frontend Service / useEffect() hook / CORS Policy
 
 ## PART 1
 ### 1. Monolithic Architecture - Traditional Software Design Approach
@@ -12,18 +12,16 @@
   
 ## PART - 2
 ### 1. useEffect ()
-    - display shimmer UI
+- Loads → API → UI Renders
+- Loads → Render UI (Like Shimmer UI / Loading spinner) → API → UI Re-renders w/ actual data (Better UX)
+**Note:** React renders fastly [because of its renders lifecycle] - One of the best characteristics of React
 
 ### 2. CORS Policy
+- Allow CORS Chrome Extension - just to bypass CORS termporarily
+
 CORS (Cross-Origin Resource Sharing) is a mechanism that allows web applications running at one origin (domain) to request resources from a different origin. This is particularly important when you're working with React in the frontend and trying to make API requests to a server that resides on a different domain.
 
 By default, browsers block requests from one origin (e.g., http://localhost:3000) to a different origin (e.g., https://api.example.com) unless the target server explicitly allows it via CORS headers.
 
 ## PART - 3
 1. Search Fuctionality Implementation
-
-
-**Note:** React renders fastly [because of its renders lifecycle] - One of the best characteristics of React
-
-## LEARN MORE
-Allow CORS Chrome Extension - just to bypass CORS termporarily
