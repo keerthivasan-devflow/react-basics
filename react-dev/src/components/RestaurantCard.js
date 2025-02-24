@@ -7,7 +7,7 @@ const RestaurantCard = (props) => {
     <>
       <div className="shadow-lg p-6 w-1/5 cursor-pointer border-2 border-gray-300">
         <img
-          src={ CLOUDINARY_IMAGE_URL + cloudinaryImageId}
+          src={CLOUDINARY_IMAGE_URL + cloudinaryImageId}
           alt="Paradise Biryani"
           className="w-full h-48 object-cover"
         />
@@ -20,6 +20,17 @@ const RestaurantCard = (props) => {
       </div>
     </>
   );
+};
+
+export const promotedLabel = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <>
+        <label>Promoted</label>
+        <RestaurantCard {...props} />
+      </>
+    );
+  };
 };
 
 export default RestaurantCard;

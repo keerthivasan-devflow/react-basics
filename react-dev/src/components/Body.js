@@ -1,14 +1,15 @@
 import { useState } from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { promotedLabel } from "./RestaurantCard";
 import { useRestaurant } from "../utils/useRestaurant";
 import { useOnlineStatus } from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [searchText, setSearchText] = useState("");
-  const [restaurantList, filteredRestaurants, setFilteredRestaurants] =
+  let [restaurantList, filteredRestaurants, setFilteredRestaurants] =
     useRestaurant();
 
   const onlineStatus = useOnlineStatus();
+  const PromotedRestaurantCard = promotedLabel(RestaurantCard);
 
   const getListOfRestaurants = () => {
     restaurantList = restaurantList.filter(
@@ -57,9 +58,16 @@ const Body = () => {
         </button>
       </div>
       <section className="m-4 flex flex-wrap justify-start gap-5">
-        {filteredRestaurants.map((restaurant) => (
-          <RestaurantCard restaurant={restaurant} key={restaurant.info.id} />
-        ))}
+        {filteredRestaurants.map((restaurant) =>
+          restaurant.info.aggregatedDiscountInfoV3 ? (
+            <PromotedRestaurantCard
+              restaurant={restaurant}
+              key={restaurant.info.id}
+         />
+          ) : (
+            <RestaurantCard restaurant={restaurant} key={restaurant.info.id} />
+          )
+        )}
       </section>
     </main>
   );
