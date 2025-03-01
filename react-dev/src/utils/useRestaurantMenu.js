@@ -11,7 +11,7 @@ export const useRestaurantMenu = (resId) => {
   const fetchRestaurantMenu = async () => {
     let data = await fetch(RESTAURANT_MENU + resId);
     let result = await data.json();
-    setRestaurantInfo(result.data);
+    setRestaurantInfo(result?.data);
   };
 
   return restaurantInfo;

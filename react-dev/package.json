@@ -5,8 +5,7 @@
   "scripts": {
     "start": "parcel ./public/index.html",
     "build": "parcel build ./public/index.html",
-    "test": "jest",
-    "custom-html": "parcel ./src/markup/index.html"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

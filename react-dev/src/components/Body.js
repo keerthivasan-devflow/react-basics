@@ -1,5 +1,5 @@
 import { useState } from "react";
-import RestaurantCard, { promotedLabel } from "./RestaurantCard";
+import RestaurantCard, { withpromotedLabel } from "./RestaurantCard";
 import { useRestaurant } from "../utils/useRestaurant";
 import { useOnlineStatus } from "../utils/useOnlineStatus";
 
@@ -9,7 +9,7 @@ const Body = () => {
     useRestaurant();
 
   const onlineStatus = useOnlineStatus();
-  const PromotedRestaurantCard = promotedLabel(RestaurantCard);
+  const PromotedRestaurantCard = withpromotedLabel(RestaurantCard);
 
   const getListOfRestaurants = () => {
     restaurantList = restaurantList.filter(
@@ -36,14 +36,14 @@ const Body = () => {
         <input
           type="search"
           placeholder="Enter your favorite restaurant"
-          className="w-sm border-2 border-gray-400 p-2 rounded-tl-md rounded-bl-md"
+          className="w-sm border-2 border-gray-100 p-2 rounded-tl-md rounded-bl-md"
           value={searchText}
           onChange={(event) => {
             setSearchText(event.target.value);
           }}
         />
         <button
-          className="border-2 border-l-0 border-gray-400 p-2 rounded-tr-md rounded-br-md text-gray-400 cursor-pointer"
+          className="border-2 border-l-0 border-gray-100 text-neutral-500 p-2 rounded-tr-md rounded-br-md cursor-pointer"
           onClick={searchHandler}
         >
           Search
@@ -51,23 +51,28 @@ const Body = () => {
       </div>
       <div className="flex justify-start m-4">
         <button
-          className="text-gray-800 rounded-lg cursor-pointer text-xl font-bold"
+          className="text-gray-800 rounded-lg cursor-pointer text-xl font-bold hover:underline"
           onClick={getListOfRestaurants}
         >
           Discover best restaurants on dineout
         </button>
       </div>
       <section className="m-4 flex flex-wrap justify-start gap-5">
-        {filteredRestaurants.map((restaurant) =>
-          restaurant.info.aggregatedDiscountInfoV3 ? (
-            <PromotedRestaurantCard
-              restaurant={restaurant}
-              key={restaurant.info.id}
-         />
-          ) : (
-            <RestaurantCard restaurant={restaurant} key={restaurant.info.id} />
-          )
-        )}
+          {filteredRestaurants.map((restaurant) => (
+            <>
+              {restaurant.info.aggregatedDiscountInfoV3 ? (
+                <PromotedRestaurantCard
+                  restaurant={restaurant}
+                  key={restaurant?.info?.id}
+                />
+              ) : (
+                <RestaurantCard
+                  restaurant={restaurant}
+                  key={restaurant?.info?.id}
+                />
+              )}
+            </>
+          ))}
       </section>
     </main>
   );
