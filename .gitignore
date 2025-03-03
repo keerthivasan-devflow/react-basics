@@ -1,15 +1,10 @@
 # React
-react-basics/node_modules
-react-material-styled/node_modules
-react-typescript/node_modules
-react-toolkit-saga/node_modules
+node_modules
 
 # React Testing Folder
-react-testing/node_modules
 react-testing/coverage
 
 # React Explore Folder
-react-dev/node_modules
 react-dev/.parcel-cache
 react-dev/dist
 notes/CORS.md

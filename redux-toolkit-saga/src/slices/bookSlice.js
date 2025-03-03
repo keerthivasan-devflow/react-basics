@@ -1,22 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { cakeActions } from "./cakeSlice.js";
+import { orderCake } from "./cakeSlice.js";
 
 const bookSlice = createSlice({
-  name: "Book Application",
+  name: "book",
   initialState: {
     numberOfBooks: 300,
   },
   reducers: {
     orderBook: (state, action) => {
-      state.numberOfBooks += action.payload;
+      state.numberOfBooks -= action.payload;
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(cakeActions.orderCake, (state) => {
+    builder.addCase(orderCake, (state) => {
       state.numberOfBooks -= 1;
     });
   },
 });
 
 export default bookSlice.reducer;
-export const bookActions = bookSlice.actions;
+export const { orderBook } = bookSlice.actions;

@@ -1,9 +1,8 @@
-import { Provider } from "react-redux";
 import "./App.css";
-
 import CakeView from "./components/CakeView";
 import UserViewData from "./components/UsersViewData";
-import { store } from "./app/store";
+import { Provider } from "react-redux";
+import { store } from "./utils/store";
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         <CakeView />
         <UserViewData />
       </Provider>
-
     </>
   );
 }
