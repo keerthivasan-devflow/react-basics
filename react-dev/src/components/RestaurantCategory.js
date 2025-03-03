@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import RestaurantCategoryList from "./RestaurantCategoryList";
 

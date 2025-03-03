@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import { useSelector } from "react-redux";
 import { useOnlineStatus } from "../utils/useOnlineStatus";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -10,6 +11,9 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
   const { loggedInUser } = useContext(UserContext);
 
+  // Here the cart is name of the reducer inside the appStore.js
+  const items = useSelector((store) => store.cart.items);
+  
   return (
     <div className="flex items-center justify-between p-4 bg-lime-700 text-white h-32">
       <div>
@@ -35,8 +39,9 @@ const Header = () => {
             <NavLink to={"/grocery"}>Grocery</NavLink>
           </li>
           <li className="cursor-pointer">
-            <NavLink to={"/cart"}>
+            <NavLink to={"/cart"} className={"flex space-x-1"}>
               <AiOutlineShoppingCart className="text-2xl" />
+              <span>({items.length})</span>
             </NavLink>
           </li>
           <li className="cursor-pointer">

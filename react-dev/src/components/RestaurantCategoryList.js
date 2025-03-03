@@ -1,6 +1,20 @@
 import { CLOUDINARY_IMAGE_URL } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
+import { useState } from "react";
 
 const RestaurantCategoryList = ({ itemCards }) => {
+  const [itemCount, setItemCount] = useState(0);
+
+  const itemCountHandler = () => {
+    setItemCount((itemCount) => itemCount + 1);
+  };
+
+  const dispatch = useDispatch();
+  const addToCartHandler = (item) => {
+    dispatch(addItem(item));
+  };
+
   return (
     <>
       {itemCards?.map((item) => (
@@ -22,10 +36,22 @@ const RestaurantCategoryList = ({ itemCards }) => {
           <section className="w-2/12 border-2 border-gray-100 relative">
             <img
               src={CLOUDINARY_IMAGE_URL + item?.card?.info?.imageId}
-              className="w-full"
+              className="w-full h-24"
             />
-            <button className="bg-gray-950 text-white absolute right-0 bottom-0 px-2 w-full">
-              Add +
+            <button
+              className="bg-gray-950 text-white absolute right-0 bottom-0 px-2 w-full 
+              cursor-pointer hover:bg-gray-300 hover:text-black"
+              onClick={() => addToCartHandler(item)}
+            >
+              {itemCount === 0 ? (
+                "Add"
+              ) : (
+                <>
+                  <span>-</span>
+                  <span>{itemCount}</span>
+                  <span onClick={() => addToCartHandler(item)}>+</span>
+                </>
+              )}
             </button>
           </section>
         </div>

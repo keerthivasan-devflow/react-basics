@@ -17,6 +17,10 @@ import RestaurantMenu from "./RestaurantMenu";
 import Login from "./Login";
 import Footer from "./Footer";
 import UserContext from "../utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "../utils/appStore";
+import Cart from "./Cart";
+import Topbar from "./Topbar";
 
 const Grocery = lazy(() => import("../components/Grocery"));
 
@@ -32,13 +36,15 @@ const App = () => {
   }, []);
 
   return (
-    <UserContext.Provider value={{ loggedInUser: username }}>
-      <div className="app">
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ loggedInUser: username }}>
         <Header />
-        <Outlet />
+        <div className="min-h-screen">
+          <Outlet />
+        </div>
         <Footer />
-      </div>
-    </UserContext.Provider>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -80,6 +86,10 @@ const appRoutes = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+      {
+        path: "/cart",
+        element: <Cart />
+      }
     ],
   },
   {
