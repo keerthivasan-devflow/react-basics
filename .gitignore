@@ -1,8 +1,6 @@
 # React
 node_modules
-
-# React Testing Folder
-react-testing/coverage
+coverage
 
 # React Explore Folder
 react-dev/.parcel-cache
