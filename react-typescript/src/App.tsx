@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BasicProps from "./typescript/BasicProps";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BasicProps
+        fullname="Keerthivasan"
+        age={27}
+        isMarried={false}
+        babies={["Lakshashree", "Parvesh"]}
+        address={{
+          doorno: 272,
+          street: "RMM Nagar",
+          pincode: 639101,
+        }}
+        employement={[
+          {
+            office: "Capgemini",
+            years: 2.5,
+          },
+          {
+            office: "Cognizant",
+            years: 2.5,
+          },
+          {
+            office: "Synechron",
+            years: 8,
+          },
+        ]}
+      />
     </div>
   );
-}
+};
 
 export default App;
