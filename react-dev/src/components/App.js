@@ -20,7 +20,6 @@ import UserContext from "../utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "../utils/appStore";
 import Cart from "./Cart";
-import Topbar from "./Topbar";
 
 const Grocery = lazy(() => import("../components/Grocery"));
 

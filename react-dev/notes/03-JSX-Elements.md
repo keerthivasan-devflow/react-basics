@@ -22,8 +22,7 @@ To start your local server, run the following command: `npm start` (or `npm run 
 
 4. Are we writing code to machine / human?
 5. What is React Instance, Element and Component?
-6. How React Elements are immutable?
-7. Composition vs Inheritance
+6. Composition vs Inheritance
 
 ## PART - 3
 ### JSX Introduction

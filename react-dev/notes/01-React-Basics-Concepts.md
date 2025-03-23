@@ -10,15 +10,15 @@
 5. What is the purpose of the `crossorigin` attribute in CDN links?
 
 **Why do we need both react.development.js & react-dom.development.js?**
-The two files, `react.development.js` and `react-dom.development.js`, are separate because they serve different purposes in a React application:
+These two files, `react.development.js` and `react-dom.development.js`, are separate because they serve different purposes in a React application.
 
 1. **`react.development.js`**:
-   - This file contains the core React library, which is responsible for defining the basic functionality of React. It includes things like creating components, handling state, and managing the component lifecycle.
+   - This file contains the core react library, which is responsible for defining the basic functionality of React. It includes things like creating components, handling state, and managing the component lifecycle.
    - Essentially, this file provides all the logic needed for React's virtual DOM, JSX compilation, hooks, and other core features.
 
 2. **`react-dom.development.js`**:
    - This file is focused on the interaction between React and the actual DOM in the browser.
-   - It provides methods for rendering React components to the browser’s DOM, including the `ReactDOM.render()` method, which is typically used to render your app’s root component into a DOM element.
+   - It provides methods for rendering React components to the browser’s DOM, including the `render()` method, which is typically used to render your app’s root component into a DOM element.
    - It also includes functions related to things like component updates, event handling, and the reconciliation process (how React compares and updates the DOM).
 
  - In summary, React (`react.development.js`) manages the component logic, while ReactDOM (`react-dom.development.js`) is responsible for taking that logic and updating the real DOM in the browser. They are separate to follow the separation of concerns: React handles the framework's core, while ReactDOM manages how those components are rendered in the browser environment.
@@ -32,14 +32,21 @@ The two files, `react.development.js` and `react-dom.development.js`, are separa
 
 ## PART - 2
 1. How to create a "Hello World" example using React
-    1.1. What is `React.createElement()` and how many arguments can it accept?
-        `React.createElement()` creates an object, not just pure HTML tags.
-    1.2. What is the `ReactDOM.createRoot()` method?
-    1.3. What is the `render()` method?
-        The `render()` method is responsible for taking the React element as an argument, converting it into the corresponding DOM element (e.g., an `h1` tag), and placing it into the DOM tree so that the browser can understand and display it.  
-    1.4. How do you add attributes to tags in React?
+2. What is `React.createElement()` and how many arguments can it accept?
+    This function call `React.createElement()` generates an object representing a React element, which later gets rendered into the actual DOM. When creating elements, React does not immediately modify the actual DOM. Instead, it constructs a virtual DOM, which is a lightweight representation of the document object model. This approach allows React to perform efficient updates by comparing the previous and current states before applying changes to the DOM elements.
+3. What is the `ReactDOM.createRoot()` method?
+ - createRoot options - onCaughtError, onUncaughtError, onRecoverableError and identifierPrefix
+ - **Troubleshooting root.render() | createRoot()**
+ - I’ve created a root, but nothing is displayed.
+ - I’m getting an error: “You passed a second argument to root.render”
+ - I’m getting an error: “Target container is not a DOM element”
+ - I’m getting an error: “Functions are not valid as a React child.”
+    - This error means that whatever you’re passing to root.render is not a React component. `root.render(App) → root.render(<App />)`
+    - If you pass a function to root.render: `root.render(createApp) → root.render(createApp())`
+4. What is the `render()` method?
+    The `render()` method is responsible for taking the React element as an argument, converting it into the corresponding DOM element (e.g., an `h1` tag), and placing it into the DOM tree so that the browser can understand and display it.  
 
-2. What is the most expensive (time consuming) operation on a webpage?
+5. What is the most expensive (time consuming) operation on a webpage?
     DOM Manipulation - When a webpage becomes more interactive and the DOM tree changes frequently, this operation becomes costly. To optimize this, libraries have been introduced.
 
 ## PART 3

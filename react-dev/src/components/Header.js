@@ -1,19 +1,20 @@
-import { NavLink } from "react-router";
+import { Link } from "react-router";
 import { useSelector } from "react-redux";
 import { useOnlineStatus } from "../utils/useOnlineStatus";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import UserContext from "../utils/UserContext";
 import { FaRegCircleUser } from "react-icons/fa6";
 
 const Header = () => {
   const onlineStatus = useOnlineStatus();
   const { loggedInUser } = useContext(UserContext);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   // Here the cart is name of the reducer inside the appStore.js
   const items = useSelector((store) => store.cart.items);
-  
+
   return (
     <div className="flex items-center justify-between p-4 bg-lime-700 text-white h-32">
       <div>
@@ -27,25 +28,27 @@ const Header = () => {
             )}
           </li>
           <li className="cursor-pointer">
-            <NavLink to={"/"}>Home</NavLink>
+            <Link to={"/"}>Home</Link>
           </li>
           <li className="cursor-pointer">
-            <NavLink to={"/about"}>About</NavLink>
+            <Link to={"/about"}>About</Link>
           </li>
           <li className="cursor-pointer">
-            <NavLink to={"/contact"}>Contact</NavLink>
+            <Link to={"/contact"}>Contact</Link>
           </li>
           <li className="cursor-pointer">
-            <NavLink to={"/grocery"}>Grocery</NavLink>
+            <Link to={"/grocery"}>Grocery</Link>
           </li>
           <li className="cursor-pointer">
-            <NavLink to={"/cart"} className={"flex space-x-1"}>
+            <Link to={"/cart"} className={"flex space-x-1"}>
               <AiOutlineShoppingCart className="text-2xl" />
               <span>({items.length})</span>
-            </NavLink>
+            </Link>
           </li>
           <li className="cursor-pointer">
-            <NavLink to={"/login"}>Login</NavLink>{" "}
+            <Link to={"/login"} onClick={() => setIsLoggedIn(!isLoggedIn)}>
+              {isLoggedIn ? "Logout" : "Login"}
+            </Link>
           </li>
 
           <li className="cursor-pointer flex space-x-2 font-light">

@@ -4,9 +4,9 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import { IoIosStarOutline } from "react-icons/io";
 
 const RestaurantCard = (props) => {
+  const { restaurant } = props;
   const { cloudinaryImageId, name, cuisines, avgRating, sla, id } =
-    props.restaurant.info;
-
+    restaurant.info;
   return (
     <>
       <Link to={"/restaurant/" + id}>
@@ -37,8 +37,10 @@ const RestaurantCard = (props) => {
 export const withpromotedLabel = (RestaurantCard) => {
   return (props) => {
     return (
-      <div className="relative w-1/5">
-        <label className="bg-gray-500 p-1 text-gray-50 absolute bottom-0 w-full text-center">Promoted</label>
+      <div className="relative">
+        <label className="bg-gray-500 p-1 text-gray-50 absolute bottom-0 w-full text-center">
+          Promoted
+        </label>
         <RestaurantCard {...props} />
       </div>
     );

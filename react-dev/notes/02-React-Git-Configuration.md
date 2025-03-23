@@ -52,22 +52,19 @@ What is the package.json file? → The above command creates a `package.json` fi
 
 ### What is the difference between tilde vs. caret operator in package.json file? 
 - https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
+
 - **Example:** `"parcel": "^2.13.3"`
-- Tilde → upgrade the dependency to major version
+- Tilde → upgrade the dependency to patch version
 - Caret → upgrade the dependency to minor version but it always recommended to upgrade to minor version. Read, why?
+- No Symbol → the project will always use that specific version and will not automatically update to newer versions.
 
-### Version numbers in detail
-Typically represented with three digits: major, minor, and patch.
+### Version Numbers - MAJOR.MINOR.PATCH
 
-**Patch version (e.g., 4.19.2 → 4.19.3)** indicates a small change or bug fix. Upgrading to a new patch version is generally safe as it does not introduce breaking changes, so you can safely update your project.
+**Patch version (e.g., 4.19.2 → 4.19.3)** when bug fixes or minor improvements are made that does not affect existing features or cause breaking changes, therefore upgrading to a new patch version is generally safe.
 
-**Minor version (e.g., 4.19.2 → 4.20.3)** represents the addition of new features that are backward-compatible with previous versions. Upgrading to a new minor version is also considered safe for your project, as it doesn't break existing functionality.
+**Minor version (e.g., 4.19.2 → 4.20.3)** when new features are added in a backward-compatible manner, meaning that existing functionality will not break, it still remains functional.
 
-**Major version (e.g., 4.19.2 → 5.20.3)** introduces changes that may break backward compatibility, meaning it could potentially break your existing code. Updating to a new major version may require code changes in your project.
-
-- If you specify a version without any symbol before it in your package.json, the project will always use that specific version and will not automatically update to newer versions.
-
-- If you use the ^ (caret) symbol before a version, it allows your project to automatically update to the latest compatible version within the same major version range. The package-lock.json file will still lock the exact version of the package used, ensuring consistency across installations.
+**Major version (e.g., 4.19.2 → 5.20.3)** when there are breaking changes, updating to a new major version of a package may require adjustments in your code.
 
 ### What is package-lock.json file?
 Both the package.json and package-lock.json files should be pushed to the Git repository.

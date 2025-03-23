@@ -49,6 +49,7 @@ const Body = () => {
           }}
         />
         <button
+          data-testid="searchbtn"
           className="border-2 border-l-0 border-gray-300 text-neutral-500 p-2 rounded-tr-md rounded-br-md cursor-pointer"
           onClick={searchHandler}
         >
