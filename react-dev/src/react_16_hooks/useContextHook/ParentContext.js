@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, memo } from "react";
+import { createContext, useState, useContext } from "react";
 
 const MyContext = createContext();
 
@@ -30,7 +30,6 @@ const ParentContext = () => {
       >
         Update Context
       </button>
-
     </div>
   );
 };

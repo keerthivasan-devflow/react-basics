@@ -20,7 +20,7 @@ const CakeView = ({ totalCakes, buyCake, cakeShopOwner }) => {
 // While mapStateToProps() connects components to the state, 
 // mapDispatchToProps() empowers components to dispatch actions to modify that state.
 // In addition to that will recieve an additional props which are passed to the Cake Component itself.
-// Here the state parameter is required one whereasa ownProps is an optional.
+// Here the state parameter is required one whereas ownProps is an optional.
 const mapStateToProps = (state, ownProps) => {
   return {
     totalCakes: state.cake.numberOfCakes,

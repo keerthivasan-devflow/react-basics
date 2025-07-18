@@ -4,10 +4,12 @@ import FunctionTimer from "./FunctionTimer";
 
 const HookRef = () => {
   return (
-    <div>
+    <>
       <SimpleRef />
-      <FunctionTimer />
-    </div>
+      <div className="flex justify-start mt-4">
+        <FunctionTimer />
+      </div>
+    </>
   );
 };
 

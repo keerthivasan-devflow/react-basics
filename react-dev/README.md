@@ -33,3 +33,15 @@ Some of the key features of StrictMode include:
 - Detecting legacy context API.
 
 Note: StrictMode only works on development mode.
+
+
+## How to make a project folder step by step procedure
+- Create a directory called "react-dev"
+- Create an "index.html file" and try to print "Hello World" in html
+
+
+# Fake API's
+- https://fakestoreapi.com/products
+
+# Shallow vs Deep Comparison in React
+- https://sharafath.hashnode.dev/shallow-vs-deep-comparison-in-javascript-unlocking-reacts-performance-secrets

@@ -21,10 +21,13 @@ const Routing = () => {
           <NavLink to="/use-reducer">useReducer()</NavLink>
         </li>
         <li className="border border-gray-500 hover:bg-gray-500 hover:font-bold hover:text-white hover:border-0 text-gray-500 rounded-3xl py-2 px-6">
+          <NavLink to="/use-ref">useRef()</NavLink>
+        </li>
+        <li className="border border-gray-500 hover:bg-gray-500 hover:font-bold hover:text-white hover:border-0 text-gray-500 rounded-3xl py-2 px-6">
           <NavLink to="/use-memo">useMemo()</NavLink>
         </li>
         <li className="border border-gray-500 hover:bg-gray-500 hover:font-bold hover:text-white hover:border-0 text-gray-500 rounded-3xl py-2 px-6">
-          <NavLink to="/use-ref">useRef()</NavLink>
+          <NavLink to="/use-callback">useCallback()</NavLink>
         </li>
       </ul>
     </div>

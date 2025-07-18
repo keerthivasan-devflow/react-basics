@@ -1,4 +1,3 @@
-import React from "react";
 import FetchFakeProducts from "./FetchFakeProducts";
 
 const HookEffect = () => {

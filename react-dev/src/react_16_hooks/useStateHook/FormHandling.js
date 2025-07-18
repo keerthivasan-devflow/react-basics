@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 const FormHandling = () => {
   const [user, setUser] = useState({
-    firstname: "Sachin",
-    lastname: "Tendulkhar",
+    firstname: "",
+    lastname: "",
   });
 
   const updateUser = (event) => {

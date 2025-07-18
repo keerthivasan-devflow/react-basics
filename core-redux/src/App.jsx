@@ -1,4 +1,4 @@
-import Redux from "./redux/redux-components/Redux";
+import Redux from "./redux/containers/Redux";
 
 function App() {
   return (

@@ -1,7 +1,5 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Header from "./Header";
-import Body from "./Body";
 
 // React Element => Object => when rendered(Object) becomes HTML Element
 const heading = React.createElement(
@@ -52,8 +50,7 @@ const App = () => {
       <h1 className="font-semibold text-2xl text-center">
         Traditional way of writing react components
       </h1>
-      {Header}
-      {Body}
+      {heading}
       {container}
       {nestedStructure}
       {fragmentExample()}

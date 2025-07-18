@@ -12,7 +12,6 @@ const Header = () => {
   const { loggedInUser } = useContext(UserContext);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // Here the cart is name of the reducer inside the appStore.js
   const items = useSelector((store) => store.cart.items);
 
   return (
@@ -28,16 +27,18 @@ const Header = () => {
             )}
           </li>
           <li className="cursor-pointer">
-            <Link to={"/"}>Home</Link>
+            <Link to={"/"} className="hover:underline hover:underline-offset-4">
+              Home
+            </Link>
           </li>
           <li className="cursor-pointer">
-            <Link to={"/about"}>About</Link>
+            <Link to={"/about"} className="hover:underline hover:underline-offset-4">About</Link>
           </li>
           <li className="cursor-pointer">
-            <Link to={"/contact"}>Contact</Link>
+            <Link to={"/contact"} className="hover:underline hover:underline-offset-4">Contact</Link>
           </li>
           <li className="cursor-pointer">
-            <Link to={"/grocery"}>Grocery</Link>
+            <Link to={"/grocery"} className="hover:underline hover:underline-offset-4">Grocery</Link>
           </li>
           <li className="cursor-pointer">
             <Link to={"/cart"} className={"flex space-x-1"}>
@@ -46,7 +47,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="cursor-pointer">
-            <Link to={"/login"} onClick={() => setIsLoggedIn(!isLoggedIn)}>
+            <Link to={"/login"} className="hover:underline hover:underline-offset-4" onClick={() => setIsLoggedIn(!isLoggedIn)}>
               {isLoggedIn ? "Logout" : "Login"}
             </Link>
           </li>

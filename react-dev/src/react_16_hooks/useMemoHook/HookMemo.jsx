@@ -3,6 +3,7 @@ import React, { useMemo, useState } from "react";
 const HookMemo = () => {
   const [firstCount, setFirstCount] = useState(1);
   const [SecondCount, setSecondCount] = useState(1);
+  
   const IncrementFirstCount = () => {
     setFirstCount(firstCount + 1);
   };

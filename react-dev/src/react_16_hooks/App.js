@@ -1,4 +1,3 @@
-import React from "react";
 import HookState from "./useStateHook/HookState";
 import { createRoot } from "react-dom/client";
 import HookEffect from "./useEffectHook/HookEffect";
@@ -9,6 +8,7 @@ import ParentComponent from "./memoization/ParentComponent";
 import HookReducer from "./useReducerHook/HookReducer";
 import HookMemo from "./useMemoHook/HookMemo";
 import HookRef from "./useRefHook/HookRef";
+import HookCallback from "./useCallbackHook/HookCallback";
 
 const App = () => {
   return (
@@ -21,8 +21,9 @@ const App = () => {
           <Route path="/use-effect" element={<HookEffect />} />
           <Route path="/use-context" element={<HookContext />} />
           <Route path="/use-reducer" element={<HookReducer />} />
-          <Route path="/use-memo" element={<HookMemo />} />
           <Route path="/use-ref" element={<HookRef />} />
+          <Route path="/use-memo" element={<HookMemo />} />
+          <Route path="/use-callback" element={<HookCallback />} />
         </Routes>
       </BrowserRouter>
     </div>

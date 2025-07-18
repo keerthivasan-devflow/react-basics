@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
+
   const updateCount = () => {
     setCount(count + 1);
   };
@@ -21,7 +22,7 @@ const Counter = () => {
     // However, after one click, count will only be 1 rather than 5!
     // This is because calling the set function does not update the count state variable in the already running code.
 
-    //To solve this problem, you may pass an updater function to setAge instead of the next state:
+    //To solve this problem, you may pass an updater function to setCount instead of the next state:
 
     // Here, a => a + 1 is your updater function. It takes the pending state and calculates the next state from it.
     // React puts your updater functions in a queue. Then, during the next render, it will call them in the same order:

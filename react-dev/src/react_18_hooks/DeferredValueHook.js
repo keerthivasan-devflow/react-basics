@@ -1,4 +1,4 @@
-import React, { useState, useDeferredValue, useMemo } from "react";
+import { useState, useDeferredValue, useMemo } from "react";
 
 const DeferredValueHook = () => {
   const [text, setInputText] = useState("");
@@ -17,7 +17,7 @@ const DeferredValueHook = () => {
     return items;
   }, [deferredInput]);
 
-  console.log(`input: ${text} - deferredInput - ${deferredInput}`)
+  console.log(`input: ${text} - deferredInput - ${deferredInput}`);
 
   return (
     <>
