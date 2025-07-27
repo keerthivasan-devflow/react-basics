@@ -13,27 +13,6 @@ const Counter = () => {
     setCount((count) => count + 1);
     setCount((count) => count + 1);
     setCount((count) => count + 1);
-
-    // setCount(count + 1);
-    // setCount(count + 1);
-    // setCount(count + 1);
-    // setCount(count + 1);
-    // setCount(count + 1);
-    // However, after one click, count will only be 1 rather than 5!
-    // This is because calling the set function does not update the count state variable in the already running code.
-
-    //To solve this problem, you may pass an updater function to setCount instead of the next state:
-
-    // Here, a => a + 1 is your updater function. It takes the pending state and calculates the next state from it.
-    // React puts your updater functions in a queue. Then, during the next render, it will call them in the same order:
-    //   a => a + 1 will receive 0 as the pending state and return 1 as the next state.
-    //   a => a + 1 will receive 1 as the pending state and return 2 as the next state.
-    //   a => a + 1 will receive 2 as the pending state and return 3 as the next state.
-    //   a => a + 1 will receive 3 as the pending state and return 4 as the next state.
-    //   a => a + 1 will receive 4 as the pending state and return 5 as the next state.
-
-    // There are no other queued updates, so React will store 5 as the current state in the end
-    // However, if you do multiple updates within the same event, updaters can be helpful.
   };
 
   return (
