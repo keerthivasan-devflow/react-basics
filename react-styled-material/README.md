@@ -39,3 +39,35 @@ Text: Defines the color for text (usually includes primary, secondary, and disab
 Background: Defines the background colors for different sections of the app.
 Divider: Color for dividers or borders.
 Action: Defines the colors for interactive elements like hover states or selected items.
+
+
+
+# Form Elements
+1. TextField - Input, FilledInput, OutlinedInput, FormHelperText, InputLabel, InputBase
+2. TextareaAutoSize
+   
+# Selection Controls
+1. Checkbox
+2. Radio
+3. RadioGroup
+4. Switch
+5. Select
+6. Autocomplete
+7. Slider
+8. Rating
+
+# Form Grouping and Labeling
+1. FormControl
+2. FormGroup
+3. FormControlLalel
+4. FormLabel
+
+# Date Picker - need to install separate library like @mui/x-date-pickers
+1. DatePicker
+2. TimePicker
+3. DateTimePicker
+4. DateRangePicker
+
+1. useFormControl
+2. InputAdornment
+3. InputLabelProps / FormHelperTextProps

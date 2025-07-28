@@ -1,13 +1,13 @@
 import "./App.css";
-import MuiComponents from "./mui-components/MuiComponents";
-import StyledContainer from "./styled-components/StyledContainer";
+import FilledInputExample from "./mui-components/form-elements/FilledInputExample";
+import TextFieldExample from "./mui-components/form-elements/TextFieldExample";
 
 function App() {
   return (
     <div className="App">
       <h1>React Material UI Components</h1>
-      {/* <StyledContainer /> */}
-      <MuiComponents />
+      <FilledInputExample />
+      {/* <TextFieldExample /> */}
     </div>
   );
 }
